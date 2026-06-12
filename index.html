@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>INTJ女のMBTI恋愛ラボ｜16タイプ別の恋愛心理・男性攻略・相性分析</title>
-  <meta name="description" content="INTJ女がMBTI別の恋愛傾向、男性心理、好き避け、未読無視、脈ありサイン、相性を冷静に分析する恋愛ラボです。">
+  <title>INTJ女のMBTI恋愛ラボ｜MBTI恋愛診断・男性攻略・相性・ランキング</title>
+  <meta name="description" content="MBTIで恋愛心理を読み解く総合メディア。好き避け・未読無視・脈ありサイン・相性診断・16タイプ別の男性攻略をわかりやすく解説します。">
   <link rel="icon" href="public/icon.png">
   <link rel="apple-touch-icon" href="public/icon.png">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -15,11 +15,12 @@
       <a class="logo" href="index.html"><img class="logo-icon" src="public/icon.png" alt="">INTJ女のMBTI恋愛ラボ</a>
       <nav class="nav">
         <a href="index.html">TOP</a>
-        <a href="intj.html">INTJ女とは？</a>
-        <a href="rankings.html">恋愛ランキング</a>
-        <a href="types.html">男性攻略</a>
         <a href="diagnosis.html">診断</a>
-        <a href="note.html">note記事一覧</a>
+        <a href="rankings.html">ランキング</a>
+        <a href="types.html">男性攻略</a>
+        <a href="columns.html">恋愛コラム</a>
+        <a href="compat.html">相性</a>
+        <a href="note.html">note記事</a>
       </nav>
     </div>
   </header>
@@ -27,46 +28,69 @@
   <main>
     <section class="hero">
       <div class="container">
-        <img class="hero-img" src="public/header.png" alt="INTJ女のMBTI恋愛ラボ｜INTJ女が分析するMBTI">
-        <h1 class="catch">好きな人の行動がわからない夜に、MBTIで恋愛心理を読み解く。</h1>
-        <p class="sub">INTJ女が、16タイプ別の恋愛傾向・男性心理・好き避け・脈ありサインを冷静に分析します。</p>
+        <img class="hero-img" src="public/header.png" alt="MBTIで読み解く恋愛心理と男性攻略">
+        <h1 class="catch">MBTIで読み解く、恋愛心理と男性攻略。</h1>
+        <p class="sub">好き避け、未読無視、脈ありサイン、相性診断。16タイプ別の恋愛傾向をわかりやすく解説します。</p>
         <div class="cta-row">
-          <a class="btn primary" href="#popular">人気記事を見る</a>
-          <a class="btn outline" href="https://note.com/intj_analyst" target="_blank" rel="noopener">noteで有料記事を見る</a>
+          <a class="btn primary" href="diagnosis.html">無料で診断する</a>
+          <a class="btn outline" href="#popular">人気記事を見る</a>
         </div>
+        <p class="hero-guide">案内人：INTJ女（分析家）が、16タイプの恋愛をデータと心理で読み解きます。</p>
       </div>
     </section>
 
+    <!-- ① 人気診断 -->
+    <section class="container section">
+      <div class="section-head">
+        <h3>人気診断</h3>
+        <a class="more" href="diagnosis.html">診断一覧 ›</a>
+      </div>
+      <div id="home-diagnoses" class="cards diag-grid"></div>
+    </section>
+
+    <!-- ② MBTI恋愛ランキング -->
+    <section class="container section">
+      <div class="section-head">
+        <h3>MBTI恋愛ランキング</h3>
+        <a class="more" href="rankings.html">ランキング一覧 ›</a>
+      </div>
+      <div id="home-rankings" class="cards"></div>
+    </section>
+
+    <!-- ③ タイプ別男性攻略 -->
+    <section class="container section">
+      <div class="section-head">
+        <h3>タイプ別男性攻略</h3>
+        <a class="more" href="types.html">16タイプを見る ›</a>
+      </div>
+      <div id="home-types" class="cards type-grid"></div>
+    </section>
+
+    <!-- ④ MBTI恋愛コラム -->
+    <section class="container section">
+      <div class="section-head">
+        <h3>MBTI恋愛コラム</h3>
+        <a class="more" href="columns.html">コラム一覧 ›</a>
+      </div>
+      <div id="home-columns" class="category-grid"></div>
+    </section>
+
+    <!-- ⑤ 人気記事 -->
     <section id="popular" class="container section">
-      <h3>人気記事</h3>
+      <div class="section-head">
+        <h3>人気記事</h3>
+      </div>
       <div id="popular-list" class="cards"></div>
     </section>
 
+    <!-- ⑥ note有料記事 -->
     <section class="container section">
-      <h3>おすすめカテゴリ</h3>
-      <div class="category-grid">
-        <a class="cat" href="rankings.html">MBTI恋愛ランキング</a>
-        <a class="cat" href="types.html">タイプ別男性攻略</a>
-        <a class="cat" href="rankings.html">好き避け・未読無視・既読無視</a>
-        <a class="cat" href="note.html">MBTI恋愛相性</a>
+      <div class="section-head">
+        <h3>もっと深く知りたい方へ（note有料記事）</h3>
+        <a class="more" href="note.html">note記事一覧 ›</a>
       </div>
-    </section>
-
-    <section class="container section">
-      <h3>タイプ別ピックアップ</h3>
-      <div id="types-list" class="cards small"></div>
-    </section>
-
-    <section class="container section">
-      <h3>診断</h3>
-      <p>あなたの彼はどのタイプ？　（診断は準備中）</p>
-      <a class="btn" href="diagnosis.html">診断ページへ</a>
-    </section>
-
-    <section class="container section">
-      <h3>もっと深く知りたい方へ</h3>
-      <p>noteの有料記事一覧はこちら</p>
-      <a class="btn outline" href="note.html">note有料記事一覧</a>
+      <p class="lead">無料記事では書ききれない深掘り分析は、noteの有料記事で公開しています。</p>
+      <a class="btn outline" href="note.html">note有料記事一覧を見る</a>
     </section>
   </main>
 
@@ -76,7 +100,15 @@
         <img src="public/icon.png" alt="">
         <p class="site-name">INTJ女のMBTI恋愛ラボ</p>
       </div>
-      <p class="footer-desc">INTJ女が、MBTI別の恋愛傾向・男性心理・好き避け・脈ありサイン・相性を冷静に分析する恋愛ラボです。</p>
+      <p class="footer-desc">MBTIで恋愛心理を読み解く総合メディア。好き避け・未読無視・脈ありサイン・相性・16タイプ別の男性攻略を分析します。</p>
+      <p class="footer-links">
+        <a href="diagnosis.html">診断</a> ・
+        <a href="rankings.html">ランキング</a> ・
+        <a href="types.html">男性攻略</a> ・
+        <a href="columns.html">恋愛コラム</a> ・
+        <a href="compat.html">相性</a> ・
+        <a href="intj.html">案内人について</a>
+      </p>
       <p class="footer-links">
         <a href="https://note.com/intj_analyst" target="_blank" rel="noopener">note</a> ・
         <a href="https://twitter.com/example" target="_blank" rel="noopener">X（旧Twitter）</a>

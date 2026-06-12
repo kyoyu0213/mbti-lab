@@ -39,6 +39,41 @@ const featuredTypes = [
   {type:'ISFP',url:'#'}
 ];
 
+/* トップ：人気診断（診断機能は準備中→diagnosis.htmlへ） */
+const homeDiagnoses = [
+  {title:'あなたの彼はどのMBTIタイプ？',excerpt:'彼の行動・LINE・恋愛傾向から、近いMBTIタイプを推測する診断。',url:'diagnosis.html'},
+  {title:'MBTI恋愛タイプ診断',excerpt:'あなた自身の恋愛傾向を16タイプから診断。',url:'diagnosis.html'},
+  {title:'MBTI恋愛相性診断',excerpt:'2人のタイプから相性をチェック。',url:'diagnosis.html'}
+];
+
+/* トップ：MBTI恋愛ランキング（抜粋） */
+const homeRankings = [
+  {title:'好き避けランキング',excerpt:'好きな人ほど避けてしまうタイプ。',url:'rankings.html'},
+  {title:'本命に冷たいランキング',excerpt:'本命にだけ素っ気なくなるタイプ。',url:'rankings.html'},
+  {title:'未読無視ランキング',excerpt:'未読のまま返さないタイプ。',url:'rankings.html'},
+  {title:'恋愛を拗らせやすいランキング',excerpt:'恋をこじらせがちなタイプ。',url:'rankings.html'},
+  {title:'SNSを監視しがちなランキング',excerpt:'別れた相手をSNSで追ってしまうタイプ。',url:'rankings.html'}
+];
+
+/* トップ：タイプ別男性攻略（大きめカード／属性付き） */
+const homeTypeGuides = [
+  {type:'INTP',attrs:{'好きな人への態度':'分析的に距離を測る','好き避け':'照れると理屈っぽくなる','LINE頻度':'低〜中・気分次第','脈ありサイン':'議論を長く続けたがる'},url:'types.html'},
+  {type:'INTJ',attrs:{'好きな人への態度':'冷静だが特別扱い','好き避け':'感情を隠して素っ気なく','LINE頻度':'低・用件中心','脈ありサイン':'将来の話に巻き込む'},url:'types.html'},
+  {type:'ENTJ',attrs:{'好きな人への態度':'主導権を握りに来る','好き避け':'ほぼしない','LINE頻度':'中・即レス傾向','脈ありサイン':'予定をすぐ押さえる'},url:'types.html'},
+  {type:'ISTJ',attrs:{'好きな人への態度':'誠実で慎重','好き避け':'真面目さゆえ素っ気なく見える','LINE頻度':'低・一定リズム','脈ありサイン':'約束を必ず守る'},url:'types.html'},
+  {type:'INFP',attrs:{'好きな人への態度':'やさしく繊細','好き避け':'緊張して避けがち','LINE頻度':'中・長文になりがち','脈ありサイン':'内面の話を打ち明ける'},url:'types.html'}
+];
+
+/* トップ：恋愛コラム カテゴリ */
+const columnCategories = [
+  {name:'片思い',url:'columns.html'},
+  {name:'復縁',url:'columns.html'},
+  {name:'未読無視',url:'columns.html'},
+  {name:'既読無視',url:'columns.html'},
+  {name:'友達以上恋人未満',url:'columns.html'},
+  {name:'恋愛心理',url:'columns.html'}
+];
+
 /* note有料記事一覧（セクション別／仮URL） */
 const noteSections = [
   {category:'人気記事',items:[

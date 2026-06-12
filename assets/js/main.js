@@ -47,7 +47,47 @@ function renderNoteSections(selector, sections){
   `).join('');
 }
 
+/* トップ：人気診断カード */
+function renderDiagnoses(selector, items){
+  const el = document.querySelector(selector);
+  if(!el || !Array.isArray(items)) return;
+  el.innerHTML = items.map(it=>`
+    <article class="card diag-card">
+      <span class="badge">診断</span>
+      <h4>${it.title}</h4>
+      ${it.excerpt ? `<p>${it.excerpt}</p>` : ''}
+      <a class="btn primary" href="${it.url || '#'}">診断する（準備中）</a>
+    </article>
+  `).join('');
+}
+
+/* トップ：タイプ別男性攻略の大きめカード */
+function renderTypeGuides(selector, items){
+  const el = document.querySelector(selector);
+  if(!el || !Array.isArray(items)) return;
+  el.innerHTML = items.map(it=>{
+    const rows = Object.entries(it.attrs||{}).map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('');
+    return `
+    <article class="card type-card-lg">
+      <div class="type-head"><span class="type-badge">${it.type}</span><span class="type-label">男性攻略</span></div>
+      <dl class="type-attrs">${rows}</dl>
+      <a class="btn" href="${it.url || '#'}">攻略を読む</a>
+    </article>`;
+  }).join('');
+}
+
+/* カテゴリチップ */
+function renderCategoryChips(selector, items){
+  const el = document.querySelector(selector);
+  if(!el || !Array.isArray(items)) return;
+  el.innerHTML = items.map(c=>`<a class="cat" href="${c.url || '#'}">${c.name}</a>`).join('');
+}
+
 document.addEventListener('DOMContentLoaded',()=>{
+  if(typeof homeDiagnoses !== 'undefined') renderDiagnoses('#home-diagnoses', homeDiagnoses);
+  if(typeof homeRankings !== 'undefined') renderCards('#home-rankings', homeRankings);
+  if(typeof homeTypeGuides !== 'undefined') renderTypeGuides('#home-types', homeTypeGuides);
+  if(typeof columnCategories !== 'undefined') renderCategoryChips('#home-columns', columnCategories);
   if(typeof popularArticles !== 'undefined') renderCards('#popular-list', popularArticles);
   if(typeof featuredTypes !== 'undefined'){
     renderCards('#types-list', featuredTypes.slice(0,6).map(t=>({title:`${t.type}男性攻略`,excerpt:'好きな人への態度・LINE傾向・脈ありサインほか',url:t.url})));
