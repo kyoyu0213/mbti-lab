@@ -559,9 +559,10 @@ img {
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background-position: center top;
+  overflow: hidden;
+  background-position: center 26%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 160%;
   background-color: #ffe3ee;
   box-shadow: 0 8px 16px rgba(239, 94, 151, 0.12);
 }
