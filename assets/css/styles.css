@@ -569,11 +569,12 @@ img {
   box-shadow: 0 8px 16px rgba(239, 94, 151, 0.12);
 }
 
-.avatar--intp { background-image: url("../../public/ui/type-intp-face.png"); }
-.avatar--intj { background-image: url("../../public/ui/type-intj-face.png"); }
-.avatar--entj { background-image: url("../../public/ui/type-entj-face.png"); }
-.avatar--istj { background-image: url("../../public/ui/type-istj-face.png"); }
-.avatar--infp { background-image: url("../../public/ui/type-infp-face.png"); }
+/* 各タイプは元画像の顔位置が違うため、縦位置を個別調整して中央に揃える */
+.avatar--intp { background-image: url("../../public/ui/type-intp-face.png"); background-position: center 34%; }
+.avatar--intj { background-image: url("../../public/ui/type-intj-face.png"); background-position: center 30%; }
+.avatar--entj { background-image: url("../../public/ui/type-entj-face.png"); background-position: center 48%; }
+.avatar--istj { background-image: url("../../public/ui/type-istj-face.png"); background-position: center 50%; }
+.avatar--infp { background-image: url("../../public/ui/type-infp-face.png"); background-position: center 32%; }
 
 .avatar-cap {
   color: var(--ink-soft);
