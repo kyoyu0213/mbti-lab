@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>INTJ女のMBTI恋愛ラボ｜MBTI恋愛診断・男性攻略・相性・ランキング</title>
   <meta name="description" content="MBTIで恋愛心理を読み解く総合メディア。好き避け・未読無視・脈ありサイン・相性診断・16タイプ別の男性攻略をわかりやすく解説します。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="INTJ女のMBTI恋愛ラボ｜MBTI恋愛診断・男性攻略・相性・ランキング">
+  <meta property="og:description" content="MBTIで恋愛心理を読み解く総合メディア。好き避け・未読無視・脈ありサイン・相性診断・16タイプ別の男性攻略を解説します。">
+  <meta property="og:image" content="public/1.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="public/1.png">
   <link rel="icon" href="public/icon.png">
   <link rel="apple-touch-icon" href="public/icon.png">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -26,72 +32,85 @@
   </header>
 
   <main>
+    <!-- ===== Hero ===== -->
     <section class="hero">
-      <div class="container">
-        <img class="hero-img" src="public/header.png" alt="MBTIで読み解く恋愛心理と男性攻略">
-        <h1 class="catch">MBTIで読み解く、恋愛心理と男性攻略。</h1>
-        <p class="sub">好き避け、未読無視、脈ありサイン、相性診断。16タイプ別の恋愛傾向をわかりやすく解説します。</p>
-        <div class="cta-row">
-          <a class="btn primary" href="diagnosis.html">無料で診断する</a>
-          <a class="btn outline" href="#popular">人気記事を見る</a>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="bubble">なんで返信くれないの…？</span>
+          <h1 class="hero-title">彼の本音、<br>MBTIでわかる。</h1>
+          <p class="ribbon">好き避け・脈ありサイン・相性・攻略法まで全部わかる！</p>
+          <p class="hero-sub">16タイプ別の恋愛傾向を徹底解説。<br>あなたの恋を、<b>もっとうまくいく方向へ</b>。</p>
+          <div class="hero-cta">
+            <a class="btn" href="diagnosis.html">まずは無料で診断する ›</a>
+            <a class="btn outline" href="#dashboard">人気記事を見る</a>
+          </div>
         </div>
-        <p class="hero-guide">案内人：INTJ女（分析家）が、16タイプの恋愛をデータと心理で読み解きます。</p>
+        <div class="hero-visual">
+          <div class="hero-photo" style="background-image:url('public/2.png')"></div>
+          <span class="hero-caption">彼は今、<br>何を考えてるんだろう…</span>
+          <span class="hero-badge">恋愛の悩み、<br>MBTIが<br>解決のヒントに♡</span>
+        </div>
       </div>
     </section>
 
-    <!-- ① 人気診断 -->
+    <!-- ===== 診断 ===== -->
     <section class="container section">
-      <div class="section-head">
-        <h3>人気診断</h3>
-        <a class="more" href="diagnosis.html">診断一覧 ›</a>
-      </div>
-      <div id="home-diagnoses" class="cards diag-grid"></div>
+      <p class="section-deco">まずは診断してみる♡</p>
+      <div id="home-diagnoses" class="diag-grid"></div>
     </section>
 
-    <!-- ② MBTI恋愛ランキング -->
-    <section class="container section">
-      <div class="section-head">
-        <h3>MBTI恋愛ランキング</h3>
-        <a class="more" href="rankings.html">ランキング一覧 ›</a>
+    <!-- ===== ダッシュボード（5カラム） ===== -->
+    <div id="dashboard" class="dashboard">
+      <!-- 人気ランキング -->
+      <div class="board">
+        <div class="board-head">
+          <svg class="bi" viewBox="0 0 24 24" fill="none" stroke="#ef5e97" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l4 3 4-6 4 6 4-3-1.6 10H5.6L4 8z"/></svg>
+          人気ランキング
+        </div>
+        <ol id="dash-rankings" class="rank-list"></ol>
+        <div class="board-btn"><a class="btn outline" href="rankings.html">ランキングをもっと見る ›</a></div>
       </div>
-      <div id="home-rankings" class="cards"></div>
-    </section>
 
-    <!-- ③ タイプ別男性攻略 -->
-    <section class="container section">
-      <div class="section-head">
-        <h3>タイプ別男性攻略</h3>
-        <a class="more" href="types.html">16タイプを見る ›</a>
+      <!-- タイプ別♡男性攻略 -->
+      <div class="board">
+        <div class="board-head">
+          <svg class="bi" viewBox="0 0 24 24" fill="none" stroke="#ef5e97" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C7 17 3 13.4 3 9.2 3 6.9 4.9 5 7.2 5c1.6 0 3 .9 3.8 2.2C12 5.9 13.2 5 14.8 5 17.1 5 19 6.9 19 9.2c0 4.2-4 7.8-7 11.8z"/></svg>
+          タイプ別♡男性攻略
+        </div>
+        <div id="dash-types" class="avatar-grid"></div>
+        <div class="board-btn"><a class="btn outline" href="types.html">すべてのタイプを見る ›</a></div>
       </div>
-      <div id="home-types" class="cards type-grid"></div>
-    </section>
 
-    <!-- ④ MBTI恋愛コラム -->
-    <section class="container section">
-      <div class="section-head">
-        <h3>MBTI恋愛コラム</h3>
-        <a class="more" href="columns.html">コラム一覧 ›</a>
+      <!-- 恋愛コラム -->
+      <div class="board">
+        <div class="board-head">
+          <svg class="bi" viewBox="0 0 24 24" fill="none" stroke="#ef5e97" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l3-.8L18 8.2l-2.2-2.2L5.8 16 5 19z"/><path d="M14.3 6.6l2.8 2.8"/></svg>
+          恋愛コラム
+        </div>
+        <ul id="dash-columns" class="col-list"></ul>
+        <div class="board-btn"><a class="btn outline" href="columns.html">すべてのコラムを見る ›</a></div>
       </div>
-      <div id="home-columns" class="category-grid"></div>
-    </section>
 
-    <!-- ⑤ 人気記事 -->
-    <section id="popular" class="container section">
-      <div class="section-head">
-        <h3>人気記事</h3>
+      <!-- 人気記事 -->
+      <div class="board">
+        <div class="board-head">
+          <svg class="bi" viewBox="0 0 24 24" fill="none" stroke="#ef5e97" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 3-2 4-2 7a4 4 0 108 0c0-2-1-3-1-4 2 1 3 3 3 6a7 7 0 11-14 0c0-4 4-5 6-9z"/></svg>
+          人気記事
+        </div>
+        <ul id="dash-popular" class="thumb-list"></ul>
+        <div class="board-btn"><a class="btn outline" href="#dashboard">人気記事をもっと見る ›</a></div>
       </div>
-      <div id="popular-list" class="cards"></div>
-    </section>
 
-    <!-- ⑥ note有料記事 -->
-    <section class="container section">
-      <div class="section-head">
-        <h3>もっと深く知りたい方へ（note有料記事）</h3>
-        <a class="more" href="note.html">note記事一覧 ›</a>
+      <!-- note有料記事 -->
+      <div class="board">
+        <div class="board-head">
+          <svg class="bi" viewBox="0 0 24 24" fill="none" stroke="#ef5e97" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h7l4 4v12H7z"/><path d="M14 4v4h4"/></svg>
+          note有料記事
+        </div>
+        <ul id="dash-note" class="thumb-list"></ul>
+        <div class="board-btn"><a class="btn outline" href="note.html">note記事をもっと見る ›</a></div>
       </div>
-      <p class="lead">無料記事では書ききれない深掘り分析は、noteの有料記事で公開しています。</p>
-      <a class="btn outline" href="note.html">note有料記事一覧を見る</a>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">

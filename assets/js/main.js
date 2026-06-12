@@ -1,4 +1,4 @@
-/* 共通カードレンダリング */
+/* ============ 汎用カード（rankings.html などで使用） ============ */
 function renderCards(selector, items){
   const el = document.querySelector(selector);
   if(!el || !Array.isArray(items)) return;
@@ -11,22 +11,22 @@ function renderCards(selector, items){
   `).join('');
 }
 
-/* タイプ別男性攻略カード（小見出しをタグ表示） */
+/* タイプ別 大きめカード（types.html） */
 function renderTypeCards(selector, types){
   const el = document.querySelector(selector);
   if(!el || !Array.isArray(types)) return;
   const tags = (typeof SUBHEADINGS !== 'undefined' ? SUBHEADINGS : [])
     .map(s=>`<span class="tag">${s}</span>`).join('');
   el.innerHTML = types.map(t=>`
-    <article class="card">
-      <h4>${t.type}男性攻略</h4>
+    <article class="card type-card-lg">
+      <div class="type-head"><span class="type-badge">${t.type}</span><span class="type-label">男性攻略</span></div>
       <div class="meta">${tags}</div>
       <a class="btn" href="${t.url || '#'}">記事を見る</a>
     </article>
   `).join('');
 }
 
-/* note有料記事をセクション別に描画 */
+/* note有料記事 セクション別（note.html） */
 function renderNoteSections(selector, sections){
   const el = document.querySelector(selector);
   if(!el || !Array.isArray(sections)) return;
@@ -47,52 +47,83 @@ function renderNoteSections(selector, sections){
   `).join('');
 }
 
-/* トップ：人気診断カード */
+/* ============ トップページ ============ */
+
+/* 人気診断カード */
 function renderDiagnoses(selector, items){
   const el = document.querySelector(selector);
   if(!el || !Array.isArray(items)) return;
+  const personSvg = `<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20c0-3.6 2.9-5.5 6.5-5.5s6.5 1.9 6.5 5.5"/></svg>`;
+  const art = a => a==='person' ? `<div class="diag-art person">${personSvg}</div>`
+    : a==='hearts' ? `<div class="diag-art hearts">♥<span>♥</span></div>`
+    : `<div class="diag-art heart">♥</div>`;
   el.innerHTML = items.map(it=>`
-    <article class="card diag-card">
-      <span class="badge">診断</span>
+    <article class="diag-card">
+      ${art(it.art)}
       <h4>${it.title}</h4>
-      ${it.excerpt ? `<p>${it.excerpt}</p>` : ''}
-      <a class="btn primary" href="${it.url || '#'}">診断する（準備中）</a>
+      <a class="btn" href="${it.url || '#'}">診断する ›</a>
     </article>
   `).join('');
 }
 
-/* トップ：タイプ別男性攻略の大きめカード */
-function renderTypeGuides(selector, items){
+/* ランキング（順位バッジ付きリスト） */
+function renderRankList(selector, items){
   const el = document.querySelector(selector);
   if(!el || !Array.isArray(items)) return;
-  el.innerHTML = items.map(it=>{
-    const rows = Object.entries(it.attrs||{}).map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('');
-    return `
-    <article class="card type-card-lg">
-      <div class="type-head"><span class="type-badge">${it.type}</span><span class="type-label">男性攻略</span></div>
-      <dl class="type-attrs">${rows}</dl>
-      <a class="btn" href="${it.url || '#'}">攻略を読む</a>
-    </article>`;
+  el.innerHTML = items.map((it,i)=>`
+    <li><span class="rank-num">${i+1}</span><a href="${it.url || '#'}">${it.title}</a></li>
+  `).join('');
+}
+
+/* 男性攻略アバター */
+function renderAvatars(selector, items){
+  const el = document.querySelector(selector);
+  if(!el || !Array.isArray(items)) return;
+  el.innerHTML = items.map(t=>{
+    const bg = t.img ? `style="background-image:url('${t.img}')"` : '';
+    return `<a class="avatar-item" href="${t.url || '#'}">
+      <span class="avatar" ${bg}></span>
+      <span class="avatar-cap"><b>${t.type}</b>男性攻略</span>
+    </a>`;
   }).join('');
 }
 
-/* カテゴリチップ */
-function renderCategoryChips(selector, items){
+/* コラム カテゴリ リスト */
+function renderColumnList(selector, items){
   const el = document.querySelector(selector);
   if(!el || !Array.isArray(items)) return;
-  el.innerHTML = items.map(c=>`<a class="cat" href="${c.url || '#'}">${c.name}</a>`).join('');
+  el.innerHTML = items.map(c=>`<li><a href="${c.url || '#'}">${c.name}</a></li>`).join('');
+}
+
+/* 記事サムネ リスト（人気記事・note） */
+function renderThumbList(selector, items){
+  const el = document.querySelector(selector);
+  if(!el || !Array.isArray(items)) return;
+  el.innerHTML = items.map(it=>{
+    const bg = it.img ? `style="background-image:url('${it.img}')"` : '';
+    const glyph = it.img ? '' : '♥';
+    const target = (it.url && it.url.startsWith('http')) ? ' target="_blank" rel="noopener"' : '';
+    return `<li>
+      <span class="thumb" ${bg}>${glyph}</span>
+      <a href="${it.url || '#'}"${target}>${it.title}</a>
+    </li>`;
+  }).join('');
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
+  /* トップ */
   if(typeof homeDiagnoses !== 'undefined') renderDiagnoses('#home-diagnoses', homeDiagnoses);
-  if(typeof homeRankings !== 'undefined') renderCards('#home-rankings', homeRankings);
-  if(typeof homeTypeGuides !== 'undefined') renderTypeGuides('#home-types', homeTypeGuides);
-  if(typeof columnCategories !== 'undefined') renderCategoryChips('#home-columns', columnCategories);
-  if(typeof popularArticles !== 'undefined') renderCards('#popular-list', popularArticles);
-  if(typeof featuredTypes !== 'undefined'){
-    renderCards('#types-list', featuredTypes.slice(0,6).map(t=>({title:`${t.type}男性攻略`,excerpt:'好きな人への態度・LINE傾向・脈ありサインほか',url:t.url})));
-    renderTypeCards('#types-cards', featuredTypes);
+  if(typeof homeRankings !== 'undefined') renderRankList('#dash-rankings', homeRankings);
+  if(typeof homeTypeGuides !== 'undefined') renderAvatars('#dash-types', homeTypeGuides);
+  if(typeof columnCategories !== 'undefined') renderColumnList('#dash-columns', columnCategories);
+  if(typeof popularArticles !== 'undefined') renderThumbList('#dash-popular', popularArticles.slice(0,4));
+  if(typeof noteSections !== 'undefined'){
+    const flatNotes = noteSections.flatMap(s=>s.items).slice(0,3);
+    renderThumbList('#dash-note', flatNotes);
   }
+
+  /* サブページ */
   if(typeof rankingArticles !== 'undefined') renderCards('#rankings-list', rankingArticles);
+  if(typeof featuredTypes !== 'undefined') renderTypeCards('#types-cards', featuredTypes);
   if(typeof noteSections !== 'undefined') renderNoteSections('#note-list', noteSections);
 });

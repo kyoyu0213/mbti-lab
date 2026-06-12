@@ -41,9 +41,9 @@ const featuredTypes = [
 
 /* トップ：人気診断（診断機能は準備中→diagnosis.htmlへ） */
 const homeDiagnoses = [
-  {title:'あなたの彼はどのMBTIタイプ？',excerpt:'彼の行動・LINE・恋愛傾向から、近いMBTIタイプを推測する診断。',url:'diagnosis.html'},
-  {title:'MBTI恋愛タイプ診断',excerpt:'あなた自身の恋愛傾向を16タイプから診断。',url:'diagnosis.html'},
-  {title:'MBTI恋愛相性診断',excerpt:'2人のタイプから相性をチェック。',url:'diagnosis.html'}
+  {title:'あなたの彼は<br>どのMBTIタイプ？',art:'person',url:'diagnosis.html'},
+  {title:'MBTI<br>恋愛タイプ診断',art:'heart',url:'diagnosis.html'},
+  {title:'MBTI<br>恋愛相性診断',art:'hearts',url:'diagnosis.html'}
 ];
 
 /* トップ：MBTI恋愛ランキング（抜粋） */
