@@ -127,21 +127,22 @@ img {
 
 .nav a::before {
   content: "";
-  width: 18px;
-  height: 18px;
-  margin-right: 7px;
-  background-image: var(--ui-sheet);
+  width: 17px;
+  height: 17px;
+  margin-right: 6px;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
+  background-size: contain;
 }
 
-.nav a:nth-child(1)::before { width: 18px; height: 18px; background-size: 658px 439px; background-position: -16px -33px; }
-.nav a:nth-child(2)::before { width: 18px; height: 18px; background-size: 658px 439px; background-position: -96px -34px; }
-.nav a:nth-child(3)::before { width: 20px; height: 20px; background-size: 698px 465px; background-position: -184px -35px; }
-.nav a:nth-child(4)::before { width: 18px; height: 18px; background-size: 658px 439px; background-position: -281px -33px; }
-.nav a:nth-child(5)::before { width: 18px; height: 18px; background-size: 658px 439px; background-position: -383px -32px; }
-.nav a:nth-child(6)::before { width: 22px; height: 19px; background-size: 704px 469px; background-position: -509px -35px; }
-.nav a:nth-child(7)::before { width: 18px; height: 22px; background-size: 691px 461px; background-position: -579px -34px; }
+/* 切れないように、各アイコンは24x24のSVGを内包(contain)で表示 */
+.nav a:nth-child(1)::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ef5e97' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 11l9-7 9 7'/%3E%3Cpath d='M5 10v9h14v-9'/%3E%3C/svg%3E"); }
+.nav a:nth-child(2)::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ef5e97' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21C7 17 3 13.4 3 9.2 3 6.9 4.9 5 7.2 5c1.6 0 3 .9 3.8 2.2C12 5.9 13.2 5 14.8 5 17.1 5 19 6.9 19 9.2c0 4.2-4 7.8-7 11.8z'/%3E%3C/svg%3E"); }
+.nav a:nth-child(3)::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ef5e97' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 8l4 3 4-6 4 6 4-3-1.6 10H5.6L4 8z'/%3E%3C/svg%3E"); }
+.nav a:nth-child(4)::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ef5e97' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='3.2'/%3E%3Cpath d='M6 19c0-3.3 2.7-5 6-5s6 1.7 6 5'/%3E%3C/svg%3E"); }
+.nav a:nth-child(5)::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ef5e97' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 19l3-.8L18 8.2l-2.2-2.2L5.8 16 5 19z'/%3E%3Cpath d='M14.3 6.6l2.8 2.8'/%3E%3C/svg%3E"); }
+.nav a:nth-child(6)::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ef5e97' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9.5 18C6 15 3 12.2 3 9 3 7 4.5 5.5 6.4 5.5c1.2 0 2.3.7 3.1 1.8.8-1.1 1.9-1.8 3.1-1.8C17.5 5.5 19 7 19 9c0 3.2-3 6-6.5 9z'/%3E%3C/svg%3E"); }
+.nav a:nth-child(7)::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ef5e97' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 4h7l4 4v12H7z'/%3E%3Cpath d='M14 4v4h4'/%3E%3C/svg%3E"); }
 
 .btn {
   display: inline-flex;
