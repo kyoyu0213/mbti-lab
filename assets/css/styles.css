@@ -450,12 +450,26 @@ img {
 }
 
 .board-head {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   margin: 0 0 12px;
   padding-bottom: 8px;
   border-bottom: 1px dotted rgba(255, 185, 212, 0.82);
   color: var(--pink-deep);
   font-size: 0.95rem;
   font-weight: 700;
+}
+
+.board-head .bi {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  fill: none;
+  stroke: var(--pink-deep);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .board-btn {
@@ -486,22 +500,20 @@ img {
 
 .rank-list li {
   display: flex;
-  align-items: flex-start;
-  gap: 8px;
+  align-items: center;
+  gap: 9px;
+  min-height: 26px;
 }
 
 .rank-num {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   flex: none;
-  display: grid;
-  place-items: center;
   color: transparent;
   font-size: 0;
-  font-weight: 900;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: contain;
 }
 
 .rank-num--1 {
