@@ -560,9 +560,9 @@ img {
   height: 54px;
   border-radius: 50%;
   overflow: hidden;
-  background-position: center 26%;
+  background-position: center 30%;
   background-repeat: no-repeat;
-  background-size: 160%;
+  background-size: 140%;
   background-color: #ffe3ee;
   box-shadow: 0 8px 16px rgba(239, 94, 151, 0.12);
 }
