@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+
+# Node (将来 npm を使う場合用)
+node_modules/
+npm-debug.log*
+.cache/
+dist/
+.env
