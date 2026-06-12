@@ -571,11 +571,6 @@ img {
 .avatar--entj { background-image: url("../../public/ui/type-entj-face.png"); }
 .avatar--istj { background-image: url("../../public/ui/type-istj-face.png"); }
 .avatar--infp { background-image: url("../../public/ui/type-infp-face.png"); }
-.avatar--other {
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Ccircle cx='12' cy='8.2' r='3.6'/%3E%3Cpath d='M5 19c0-3.9 3.2-5.8 7-5.8s7 1.9 7 5.8z'/%3E%3C/svg%3E") center/54% no-repeat,
-    linear-gradient(135deg, #ffb3d0, #ff8fb6);
-}
 
 .avatar-cap {
   color: var(--ink-soft);
