@@ -506,35 +506,25 @@ img {
 }
 
 .rank-num {
-  width: 26px;
-  height: 26px;
+  width: 25px;
+  height: 25px;
   flex: none;
-  color: transparent;
-  font-size: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--pink), var(--pink-deep));
+  box-shadow: 0 3px 8px rgba(239, 94, 151, 0.28);
 }
 
-.rank-num--1 {
-  background-image: url("../../public/ui/rank-1-tight.png");
-}
-
-.rank-num--2 {
-  background-image: url("../../public/ui/rank-2-tight.png");
-}
-
-.rank-num--3 {
-  background-image: url("../../public/ui/rank-3-tight.png");
-}
-
-.rank-num--4 {
-  background-image: url("../../public/ui/rank-4-tight.png");
-}
-
-.rank-num--a {
-  background-image: url("../../public/ui/rank-a-tight.png");
-}
+.rank-num--1 { background: linear-gradient(135deg, #ffcb5e, #f59a2e); }
+.rank-num--2 { background: linear-gradient(135deg, #ff9cc2, #ff78a7); }
+.rank-num--3 { background: linear-gradient(135deg, #ffabcb, #ff8bb4); }
+.rank-num--4 { background: linear-gradient(135deg, #ffbcd5, #ff9ec1); }
+.rank-num--a { background: linear-gradient(135deg, #ffccdf, #ffadcb); }
 
 .rank-list a,
 .col-list a,
