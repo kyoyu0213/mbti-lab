@@ -41,7 +41,7 @@ const featuredTypes = [
 
 /* トップ：人気診断（診断機能は準備中→diagnosis.htmlへ） */
 const homeDiagnoses = [
-  {title:'あなたの彼は<br>どのMBTIタイプ？',art:'person',url:'diagnosis.html'},
+  {title:'あの人の<br>MBTI推測診断',art:'person',url:'diagnosis.html'},
   {title:'MBTI<br>恋愛タイプ診断',art:'heart',url:'diagnosis.html'},
   {title:'MBTI<br>恋愛相性診断',art:'hearts',url:'diagnosis.html'}
 ];
