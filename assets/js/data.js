@@ -82,25 +82,42 @@ const columnCategories = [
   {name:'恋愛心理',url:'columns.html'}
 ];
 
-/* note有料記事一覧（セクション別／仮URL） */
+/* note有料記事一覧（実記事・タイトルはnoteから取得） */
 const noteSections = [
-  {category:'人気記事',items:[
-    {title:'好き避けしやすいMBTIランキング',excerpt:'好きな人ほど避けてしまう16タイプを徹底解説。',price:'¥500',url:'https://note.example.com/n/popular1'},
-    {title:'INTJ男に溺愛される女性とは？',excerpt:'合理主義の彼が手放せなくなる存在の条件。',price:'¥600',url:'https://note.example.com/n/popular2'}
+  {category:'タイプ別｜彼の本音と攻略（男性）',items:[
+    {title:'INFP 男に溺愛される方法｜優しい理想主義者が「この子だけ」と決める女性',url:'https://note.com/intj_analyst/n/n7e0435072a84'},
+    {title:'実は顔じゃない――INTP男が本気で惹かれる女性、恋愛対象外になる女性',url:'https://note.com/intj_analyst/n/n90001451cc43'},
+    {title:'ISTJ男の本音完全解説｜好きな女性への態度・脈ありサイン・落とし方',url:'https://note.com/intj_analyst/n/n4ee8bed2f56f'},
+    {title:'なぜ彼女だけ特別扱いされるのか？ENTJ男が本気で惚れる女性の条件',url:'https://note.com/intj_analyst/n/ne34603d2ac07'},
+    {title:'INTJ男に溺愛される女性とは？合理主義の彼が手放せなくなる存在の条件',url:'https://note.com/intj_analyst/n/nfbefa346cf88'},
+    {title:'ENFP 男に溺愛される方法｜情熱的な理想家が「唯一無二」と感じる女性',url:'https://note.com/intj_analyst/n/nbc70089a482b'},
+    {title:'ENFJ男の心を掴む方法｜尽くされる女性と恋愛対象外の女性の違い',url:'https://note.com/intj_analyst/n/n06e8e87318cc'},
+    {title:'ENTP男は追いかけたい――彼が手放せなくなる女性とは',url:'https://note.com/intj_analyst/n/nad4d3eb11812'},
+    {title:'ESFP 男に溺愛される方法｜今を生きる表現者が夢中になる、心を掴む女性',url:'https://note.com/intj_analyst/n/nb30cac97bf89'},
+    {title:'ESFJ 男に溺愛される方法｜温かな奉仕者が安心して全てを捧げたくなる女性',url:'https://note.com/intj_analyst/n/n7f58d1b3eae9'},
+    {title:'ESTP男の本命になる方法｜遊び相手と本命女性の決定的な違い',url:'https://note.com/intj_analyst/n/nfceac847c4f8'},
+    {title:'なぜ彼女は妻に選ばれたのか？ESTJ男が生涯を共にしたい女性の条件',url:'https://note.com/intj_analyst/n/n41a385bef40b'},
+    {title:'なぜ彼女だけ心を許されたのか？ISFP男が深く愛する女性の条件',url:'https://note.com/intj_analyst/n/nf90247b71f84'},
+    {title:'ISFJ男に溺愛される女性とは？彼が生涯守りたいと思う本命の特徴',url:'https://note.com/intj_analyst/n/n7601f9712a7c'},
+    {title:'無口なISTP男が離れなくなる女性――彼が心を許した本命の特徴',url:'https://note.com/intj_analyst/n/nd86e4c048c06'},
+    {title:'INFJ男は理解された瞬間に落ちる――彼が手放せなくなる女性とは',url:'https://note.com/intj_analyst/n/nb8c5e4c23c2c'}
   ]},
-  {category:'MBTI恋愛ランキング',items:[
-    {title:'本命にだけ冷たくなるMBTIランキング',excerpt:'好きな人にだけ素っ気なくなる心理をタイプ別に。',price:'¥500',url:'https://note.example.com/n/rank1'},
-    {title:'既読無視・未読無視しがちなMBTIランキング',excerpt:'返信が遅い／返さないタイプの本音。',price:'¥500',url:'https://note.example.com/n/rank2'}
-  ]},
-  {category:'タイプ別男性攻略',items:[
-    {title:'INTP男性攻略｜恋愛傾向と落とし方',excerpt:'好きな人への態度・LINE・脈ありサインまで。',price:'¥700',url:'https://note.example.com/n/type1'},
-    {title:'INTJ男性攻略｜溺愛される女性になる方法',excerpt:'合理派の彼が本気になる条件を解説。',price:'¥700',url:'https://note.example.com/n/type2'}
-  ]},
-  {category:'MBTI恋愛相性',items:[
-    {title:'MBTI恋愛相性大全｜16タイプ全256組み合わせ',excerpt:'相性の良し悪しと付き合い方を完全網羅。',price:'¥1,200',url:'https://note.example.com/n/aisho1'}
-  ]},
-  {category:'復縁・未練・別れ系',items:[
-    {title:'MBTIで読み解く深層心理と復縁の可能性',excerpt:'別れたあとの心理と復縁できるタイプ。',price:'¥1,200',url:'https://note.example.com/n/recover1'},
-    {title:'別れを後悔しやすいMBTIと未練の残し方',excerpt:'未練が長引くタイプの特徴と向き合い方。',price:'¥900',url:'https://note.example.com/n/recover2'}
+  {category:'タイプ別｜あなたの恋愛傾向（女性）',items:[
+    {title:'頭では分かっているのに恋愛だけうまくいかない――INTJ女性が幸せになれない本当の理由',url:'https://note.com/intj_analyst/n/n5e4d6eb0a254'},
+    {title:'好きになるほど考えすぎる――INTP女性が恋愛を拗らせやすい理由',url:'https://note.com/intj_analyst/n/n5eef416fdf6f'},
+    {title:'「彼なら変われる」と信じてしまう――INFJ女性が苦しい恋を手放せない理由',url:'https://note.com/intj_analyst/n/nf472dfb6c623'},
+    {title:'「私だけは理解できる」が危険――INFP女性がダメ男に惹かれやすい理由',url:'https://note.com/intj_analyst/n/n8cd00438b91b'},
+    {title:'恋に落ちるのは早いのに続かない――ENFP女性が恋愛で迷子になる理由',url:'https://note.com/intj_analyst/n/n20ca6f3e9315'},
+    {title:'好きな人を優先しすぎる――ENFJ女性が恋愛で損をしやすい理由',url:'https://note.com/intj_analyst/n/ndd7de83a3e20'},
+    {title:'追われると冷める、追うと燃える――ENTP女性の恋愛が難しくなる理由',url:'https://note.com/intj_analyst/n/nf0c7ae903e18'},
+    {title:'恋愛だけ思い通りにならない――ENTJ女性が苦戦しやすい理由',url:'https://note.com/intj_analyst/n/n3cf721ee03ea'},
+    {title:'気づけばいつも尽くしている――ISFJ女性が都合のいい女性になりやすい理由',url:'https://note.com/intj_analyst/n/n094e03a3fc66'},
+    {title:'慎重すぎて恋を逃す――ISTJ女性が恋愛で後悔しやすい理由',url:'https://note.com/intj_analyst/n/nf1b35b99aaff'},
+    {title:'嫌われるくらいなら我慢する――ISFP女性が恋愛で苦しくなる理由',url:'https://note.com/intj_analyst/n/n56410f928faf'},
+    {title:'恋愛だけは面倒になる――ISTP女性が距離を取ってしまう理由',url:'https://note.com/intj_analyst/n/n25c05c7672f6'},
+    {title:'「必要とされたい」が止まらない――ESFJ女性が苦しい恋を続けてしまう理由',url:'https://note.com/intj_analyst/n/n7cdf00ad9cdd'},
+    {title:'ダメ男は嫌いなのになぜか引き寄せる――ESTJ女性の恋愛の落とし穴',url:'https://note.com/intj_analyst/n/ncac5194b7898'},
+    {title:'恋は楽しいはずなのに傷つく――ESFP女性が同じ失敗を繰り返す理由',url:'https://note.com/intj_analyst/n/n23f7ac68d75e'},
+    {title:'刺激的な恋ばかり選んでしまう――ESTP女性が安定した恋愛を難しくする理由',url:'https://note.com/intj_analyst/n/n9fef45b19f7d'}
   ]}
 ];

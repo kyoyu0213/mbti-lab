@@ -46,7 +46,7 @@ function renderNoteSections(selector, sections){
           <article class="card">
             <h4>${n.title}</h4>
             ${n.excerpt ? `<p>${n.excerpt}</p>` : ''}
-            <p class="price">${n.price || '価格：準備中'}</p>
+            ${n.price ? `<p class="price">${n.price}</p>` : ''}
             <a class="btn outline" href="${n.url || '#'}" target="_blank" rel="noopener">noteで読む</a>
           </article>
         `).join('')}
