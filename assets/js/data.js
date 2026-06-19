@@ -26,17 +26,25 @@ const rankingArticles = [
   {id:'r8',title:'別れを後悔しやすいMBTIランキング',excerpt:'あとから未練が出やすいタイプを解説。',url:'https://note.com/intj_analyst/n/nfbd192ab74c4'}
 ];
 
-/* タイプ別男性攻略（優先表示の8タイプ） */
+/* タイプ別男性攻略（16タイプ／note記事リンク） */
 const SUBHEADINGS = ['好きな人への態度','好き避け','LINE傾向','脈ありサイン','溺愛される女性の特徴','急に消える理由'];
 const featuredTypes = [
-  {type:'INTP',url:'#'},
-  {type:'INTJ',url:'#'},
-  {type:'ENTJ',url:'#'},
-  {type:'ISTJ',url:'#'},
-  {type:'INFP',url:'#'},
-  {type:'ENTP',url:'#'},
-  {type:'INFJ',url:'#'},
-  {type:'ISFP',url:'#'}
+  {type:'INTJ',url:'https://note.com/intj_analyst/n/nfbefa346cf88'},
+  {type:'INTP',url:'https://note.com/intj_analyst/n/n90001451cc43'},
+  {type:'ENTJ',url:'https://note.com/intj_analyst/n/ne34603d2ac07'},
+  {type:'ENTP',url:'https://note.com/intj_analyst/n/nad4d3eb11812'},
+  {type:'INFJ',url:'https://note.com/intj_analyst/n/nb8c5e4c23c2c'},
+  {type:'INFP',url:'https://note.com/intj_analyst/n/n7e0435072a84'},
+  {type:'ENFJ',url:'https://note.com/intj_analyst/n/n06e8e87318cc'},
+  {type:'ENFP',url:'https://note.com/intj_analyst/n/nbc70089a482b'},
+  {type:'ISTJ',url:'https://note.com/intj_analyst/n/n4ee8bed2f56f'},
+  {type:'ISFJ',url:'https://note.com/intj_analyst/n/n7601f9712a7c'},
+  {type:'ESTJ',url:'https://note.com/intj_analyst/n/n41a385bef40b'},
+  {type:'ESFJ',url:'https://note.com/intj_analyst/n/n7f58d1b3eae9'},
+  {type:'ISTP',url:'https://note.com/intj_analyst/n/nd86e4c048c06'},
+  {type:'ISFP',url:'https://note.com/intj_analyst/n/nf90247b71f84'},
+  {type:'ESTP',url:'https://note.com/intj_analyst/n/nfceac847c4f8'},
+  {type:'ESFP',url:'https://note.com/intj_analyst/n/nb30cac97bf89'}
 ];
 
 /* トップ：人気診断（診断機能は準備中→diagnosis.htmlへ） */

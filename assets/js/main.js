@@ -21,13 +21,17 @@ function renderTypeCards(selector, types){
   if(!el || !Array.isArray(types)) return;
   const tags = (typeof SUBHEADINGS !== 'undefined' ? SUBHEADINGS : [])
     .map(s=>`<span class="tag">${s}</span>`).join('');
-  el.innerHTML = types.map(t=>`
+  el.innerHTML = types.map(t=>{
+    const ext = t.url && t.url.startsWith('http');
+    const attr = ext ? ' target="_blank" rel="noopener"' : '';
+    const label = ext ? 'noteで読む' : '記事を見る';
+    return `
     <article class="card type-card-lg">
       <div class="type-head"><span class="type-badge">${t.type}</span><span class="type-label">男性攻略</span></div>
       <div class="meta">${tags}</div>
-      <a class="btn" href="${t.url || '#'}">記事を見る</a>
-    </article>
-  `).join('');
+      <a class="btn" href="${t.url || '#'}"${attr}>${label}</a>
+    </article>`;
+  }).join('');
 }
 
 /* note有料記事 セクション別（note.html） */
