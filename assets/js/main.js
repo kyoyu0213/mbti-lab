@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
 
   /* サブページ */
-  if(typeof rankingArticles !== 'undefined') renderNoteCards('#rankings-list', rankingArticles, 'ランキング');
+  if(typeof rankingSections !== 'undefined') renderNoteSections('#rankings-list', rankingSections);
   if(typeof featuredTypes !== 'undefined') renderTypeCards('#types-cards', featuredTypes);
   if(typeof noteSections !== 'undefined') renderNoteSections('#note-list', noteSections);
 });
