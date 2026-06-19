@@ -16,14 +16,14 @@ const popularArticles = [
 
 /* MBTI恋愛ランキング一覧（8本） */
 const rankingArticles = [
-  {id:'r1',title:'好き避けしやすいMBTIランキング',excerpt:'好きなほど避けてしまうタイプをランキング形式で解説。',url:'#'},
-  {id:'r2',title:'既読無視しがちなMBTIランキング',excerpt:'既読無視が多い傾向のタイプを紹介。',url:'#'},
-  {id:'r3',title:'未読無視しがちなMBTIランキング',excerpt:'すぐ返信しないタイプの特徴。',url:'#'},
-  {id:'r4',title:'恋愛を拗らせやすいMBTIランキング',excerpt:'恋をこじらせがちなタイプを解説。',url:'#'},
-  {id:'r5',title:'本命にだけ冷たくなるMBTIランキング',excerpt:'本命にだけ素っ気ないタイプを紹介。',url:'#'},
-  {id:'r6',title:'友情から恋に落ちやすいMBTIランキング',excerpt:'友人関係から恋愛に発展しやすいタイプ。',url:'#'},
-  {id:'r7',title:'別れた後にSNSを見てしまうMBTIランキング',excerpt:'別れた相手をつい追ってしまうタイプ。',url:'#'},
-  {id:'r8',title:'別れを後悔しやすいMBTIランキング',excerpt:'あとから未練が出やすいタイプを解説。',url:'#'}
+  {id:'r1',title:'好き避けしやすいMBTIランキング',excerpt:'好きなほど避けてしまうタイプをランキング形式で解説。',url:'https://note.com/intj_analyst/n/nad3060876637'},
+  {id:'r2',title:'既読無視しがちなMBTIランキング',excerpt:'既読無視が多い傾向のタイプを紹介。',url:'https://note.com/intj_analyst/n/n9fa05d63f314'},
+  {id:'r3',title:'未読無視しがちなMBTIランキング',excerpt:'すぐ返信しないタイプの特徴。',url:'https://note.com/intj_analyst/n/n983863e05735'},
+  {id:'r4',title:'恋愛を拗らせやすいMBTIランキング',excerpt:'恋をこじらせがちなタイプを解説。',url:'https://note.com/intj_analyst/n/n3b0c13914760'},
+  {id:'r5',title:'本命にだけ冷たくなるMBTIランキング',excerpt:'本命にだけ素っ気ないタイプを紹介。',url:'https://note.com/intj_analyst/n/n6543411a2647'},
+  {id:'r6',title:'友情から恋に落ちやすいMBTIランキング',excerpt:'友人関係から恋愛に発展しやすいタイプ。',url:'https://note.com/intj_analyst/n/n31d107590ee3'},
+  {id:'r7',title:'別れた後にSNSを見てしまうMBTIランキング',excerpt:'別れた相手をつい追ってしまうタイプ。',url:'https://note.com/intj_analyst/n/n8d28d4e40a7f'},
+  {id:'r8',title:'別れを後悔しやすいMBTIランキング',excerpt:'あとから未練が出やすいタイプを解説。',url:'https://note.com/intj_analyst/n/nfbd192ab74c4'}
 ];
 
 /* タイプ別男性攻略（優先表示の8タイプ） */

@@ -2,13 +2,17 @@
 function renderCards(selector, items){
   const el = document.querySelector(selector);
   if(!el || !Array.isArray(items)) return;
-  el.innerHTML = items.map(it=>`
+  el.innerHTML = items.map(it=>{
+    const ext = it.url && it.url.startsWith('http');
+    const attr = ext ? ' target="_blank" rel="noopener"' : '';
+    const label = ext ? 'noteで読む' : '記事を見る';
+    return `
     <article class="card">
       <h4>${it.title}</h4>
       ${it.excerpt ? `<p>${it.excerpt}</p>` : ''}
-      <a class="btn" href="${it.url || '#'}">記事を見る</a>
-    </article>
-  `).join('');
+      <a class="btn" href="${it.url || '#'}"${attr}>${label}</a>
+    </article>`;
+  }).join('');
 }
 
 /* タイプ別 大きめカード（types.html） */
