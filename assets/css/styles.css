@@ -1126,3 +1126,43 @@ img {
   .result-title { font-size: 1.3rem; }
   .score-num { font-size: 3rem; }
 }
+
+/* ===== 恋愛タイプ診断（love-type.html） ===== */
+.result-block p { margin: 0; font-size: 0.92rem; color: var(--ink); }
+.result-catch { font-size: 1.05rem; color: var(--pink-deep); font-weight: 800; margin: 0 0 12px; }
+
+.quiz { display: flex; flex-direction: column; gap: 14px; margin: 0 0 20px; }
+.quiz-q {
+  background: #fff;
+  border: 1.5px solid var(--pink-line);
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: 0 6px 16px rgba(239, 94, 151, 0.05);
+}
+.quiz-q-title { font-weight: 800; color: var(--ink); font-size: 0.98rem; margin: 0 0 12px; }
+.quiz-q-title .qnum {
+  display: inline-block;
+  min-width: 1.7em;
+  color: var(--pink-deep);
+  font-weight: 900;
+}
+.quiz-opts { display: flex; flex-direction: column; gap: 8px; }
+.quiz-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border: 1.5px solid var(--pink-line);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.quiz-opt:hover { background: var(--pink-soft); }
+.quiz-opt input { accent-color: var(--pink-deep); width: 18px; height: 18px; flex: none; margin: 0; }
+.quiz-opt span { font-size: 0.92rem; color: var(--ink); }
+.quiz-opt:has(input:checked) { background: var(--pink-soft); border-color: var(--pink); }
+
+.lovetype-submit { width: 100%; min-height: 50px; font-size: 1rem; }
+.lovetype-retry { width: 100%; margin-top: 4px; }
+.result-lead { font-weight: 800; color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 4px; letter-spacing: 0.04em; }
