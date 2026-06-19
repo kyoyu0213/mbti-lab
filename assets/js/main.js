@@ -41,13 +41,17 @@ function renderNoteSections(selector, sections){
   el.innerHTML = sections.map(sec=>`
     <section class="section">
       <h3>${sec.category}</h3>
-      <div class="cards">
+      <div class="note-list">
         ${sec.items.map(n=>`
-          <article class="card">
-            <h4>${n.title}</h4>
-            ${n.excerpt ? `<p>${n.excerpt}</p>` : ''}
-            ${n.price ? `<p class="price">${n.price}</p>` : ''}
-            <a class="btn outline" href="${n.url || '#'}" target="_blank" rel="noopener">noteで読む</a>
+          <article class="note-card">
+            <a class="note-thumb" href="${n.url || '#'}" target="_blank" rel="noopener">
+              ${n.img ? `<img loading="lazy" src="${n.img}" alt="">` : ''}
+            </a>
+            <div class="note-body">
+              ${sec.tag ? `<span class="tag">${sec.tag}</span>` : ''}
+              <h4><a href="${n.url || '#'}" target="_blank" rel="noopener">${n.title}</a></h4>
+              ${n.excerpt ? `<p>${n.excerpt}</p>` : ''}
+            </div>
           </article>
         `).join('')}
       </div>
