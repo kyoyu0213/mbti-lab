@@ -1019,6 +1019,17 @@ img {
   }
 }
 
+/* ===== 診断ページのバナー画像 ===== */
+.diag-banner {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 18px auto 10px;
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(239, 94, 151, 0.16);
+}
+
 /* ===== 相性診断（compat.html） ===== */
 .compat-form {
   background: #fff;
