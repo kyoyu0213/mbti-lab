@@ -100,7 +100,12 @@ const noteSections = [
     {title:'なぜ彼女だけ心を許されたのか？ISFP男が深く愛する女性の条件',url:'https://note.com/intj_analyst/n/nf90247b71f84'},
     {title:'ISFJ男に溺愛される女性とは？彼が生涯守りたいと思う本命の特徴',url:'https://note.com/intj_analyst/n/n7601f9712a7c'},
     {title:'無口なISTP男が離れなくなる女性――彼が心を許した本命の特徴',url:'https://note.com/intj_analyst/n/nd86e4c048c06'},
-    {title:'INFJ男は理解された瞬間に落ちる――彼が手放せなくなる女性とは',url:'https://note.com/intj_analyst/n/nb8c5e4c23c2c'}
+    {title:'INFJ男は理解された瞬間に落ちる――彼が手放せなくなる女性とは',url:'https://note.com/intj_analyst/n/nb8c5e4c23c2c'},
+    {title:'嫌われた？INTP男が急に返信しなくなる本当の理由',url:'https://note.com/intj_analyst/n/n38de9357fe77'},
+    {title:'INTP男は好きな人ほど避ける――脈なしと勘違いされる恋心の正体',url:'https://note.com/intj_analyst/n/n68a36c18da09'},
+    {title:'INTP 男に溺愛される方法｜理論派男子が「唯一無二」と認める女性になる',url:'https://note.com/intj_analyst/n/n529c1357d391'},
+    {title:'INTP 男の恋愛パターン｜好きになる流れ・付き合い方・あるある本音',url:'https://note.com/intj_analyst/n/n99cb391192b9'},
+    {title:'ISTJ男は好きな人ほど慎重になる――脈なしと勘違いされる本気の恋心',url:'https://note.com/intj_analyst/n/nc1c642f6d0bc'}
   ]},
   {category:'タイプ別｜あなたの恋愛傾向（女性）',items:[
     {title:'頭では分かっているのに恋愛だけうまくいかない――INTJ女性が幸せになれない本当の理由',url:'https://note.com/intj_analyst/n/n5e4d6eb0a254'},
