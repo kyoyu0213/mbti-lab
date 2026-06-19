@@ -15,6 +15,26 @@ function renderCards(selector, items){
   }).join('');
 }
 
+/* アイキャッチ付きカード（note記事一覧・ランキング一覧で使用） */
+function noteCardHtml(n, tag){
+  return `
+    <article class="note-card">
+      <a class="note-thumb" href="${n.url || '#'}" target="_blank" rel="noopener">
+        ${n.img ? `<img loading="lazy" src="${n.img}" alt="">` : ''}
+      </a>
+      <div class="note-body">
+        ${tag ? `<span class="tag">${tag}</span>` : ''}
+        <h4><a href="${n.url || '#'}" target="_blank" rel="noopener">${n.title}</a></h4>
+        ${n.excerpt ? `<p>${n.excerpt}</p>` : ''}
+      </div>
+    </article>`;
+}
+function renderNoteCards(selector, items, tag){
+  const el = document.querySelector(selector);
+  if(!el || !Array.isArray(items)) return;
+  el.innerHTML = items.map(n=>noteCardHtml(n, tag)).join('');
+}
+
 /* タイプ別 大きめカード（types.html） */
 function renderTypeCards(selector, types){
   const el = document.querySelector(selector);
@@ -42,18 +62,7 @@ function renderNoteSections(selector, sections){
     <section class="section">
       <h3>${sec.category}</h3>
       <div class="note-list">
-        ${sec.items.map(n=>`
-          <article class="note-card">
-            <a class="note-thumb" href="${n.url || '#'}" target="_blank" rel="noopener">
-              ${n.img ? `<img loading="lazy" src="${n.img}" alt="">` : ''}
-            </a>
-            <div class="note-body">
-              ${sec.tag ? `<span class="tag">${sec.tag}</span>` : ''}
-              <h4><a href="${n.url || '#'}" target="_blank" rel="noopener">${n.title}</a></h4>
-              ${n.excerpt ? `<p>${n.excerpt}</p>` : ''}
-            </div>
-          </article>
-        `).join('')}
+        ${sec.items.map(n=>noteCardHtml(n, sec.tag)).join('')}
       </div>
     </section>
   `).join('');
@@ -135,7 +144,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
 
   /* サブページ */
-  if(typeof rankingArticles !== 'undefined') renderCards('#rankings-list', rankingArticles);
+  if(typeof rankingArticles !== 'undefined') renderNoteCards('#rankings-list', rankingArticles, 'ランキング');
   if(typeof featuredTypes !== 'undefined') renderTypeCards('#types-cards', featuredTypes);
   if(typeof noteSections !== 'undefined') renderNoteSections('#note-list', noteSections);
 });
