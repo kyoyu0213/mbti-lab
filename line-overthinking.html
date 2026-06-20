@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LINE考えすぎ診断｜MBTI恋愛ラボ</title>
+  <meta name="description" content="返信速度、既読、未読、絵文字、文面。好きな人のLINEをどれくらい深読みしているかを診断。考えすぎ度％と、少し楽になるヒントが分かります。">
+  <link rel="icon" href="public/icon.png">
+  <link rel="apple-touch-icon" href="public/icon.png">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img class="logo-icon" src="public/icon.png" alt="">MBTI恋愛ラボ</a>
+      <nav class="nav">
+        <a href="index.html">TOP</a>
+        <a href="diagnosis.html">診断</a>
+        <a href="rankings.html">ランキング</a>
+        <a href="types.html">男性攻略</a>
+        <a href="columns.html">恋愛コラム</a>
+        <a href="compat.html">相性</a>
+        <a href="note.html">note記事</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">LINE考えすぎ診断</h1>
+    <p class="lead">返信速度、既読、未読、絵文字、文面。好きな人のLINEをどれくらい深読みしているか診断します。</p>
+    <div class="line-demo" aria-hidden="true">
+      <span class="line-bubble line-them">おやすみ💤</span>
+      <span class="line-bubble line-me">おやすみ！</span>
+      <span class="line-note">↑ この絵文字、脈ありかな…？（考えすぎ）</span>
+    </div>
+    <p class="compat-caution">「返信が遅いだけで不安になる」「一言の温度差が気になる」——そんな恋愛中のLINEぐせをチェックします。</p>
+
+    <div id="line-quiz" class="quiz"></div>
+    <button type="button" class="btn lovetype-submit" id="line-go">結果を見る</button>
+
+    <section id="line-result" class="compat-result" hidden></section>
+
+    <p style="margin-top:24px"><a class="btn outline" href="diagnosis.html">ほかの診断を見る</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="public/icon.png" alt="">
+        <p class="site-name">MBTI恋愛ラボ</p>
+      </div>
+      <p class="footer-desc">MBTIで恋愛心理を読み解く総合メディア。好き避け・未読無視・脈ありサイン・相性・16タイプ別の男性攻略を分析します。</p>
+      <p class="footer-links">
+        <a href="diagnosis.html">診断一覧</a> ・
+        <a href="rankings.html">ランキング</a> ・
+        <a href="types.html">男性攻略</a> ・
+        <a href="columns.html">恋愛コラム</a> ・
+        <a href="compat.html">相性</a> ・
+        <a href="intj.html">案内人について</a>
+      </p>
+      <p class="footer-links">
+        <a href="https://note.com/intj_analyst" target="_blank" rel="noopener">note</a> ・
+        <a href="https://twitter.com/example" target="_blank" rel="noopener">X（旧Twitter）</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/mbti.js?v=1"></script>
+  <script src="assets/js/line-overthinking.js?v=1"></script>
+</body>
+</html>
