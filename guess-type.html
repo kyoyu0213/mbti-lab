@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>あの人のMBTI推測診断｜MBTI恋愛ラボ</title>
+  <meta name="description" content="好きな人・彼の行動やLINE・距離感から、近そうなMBTIタイプを推測する診断。本人のMBTIが分からなくても、行動パターンから近いタイプ傾向が分かります。">
+  <link rel="icon" href="public/icon.png">
+  <link rel="apple-touch-icon" href="public/icon.png">
+  <link rel="stylesheet" href="assets/css/styles.css?v=16">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img class="logo-icon" src="public/icon.png" alt="">MBTI恋愛ラボ</a>
+      <nav class="nav">
+        <a href="index.html">TOP</a>
+        <a href="diagnosis.html">診断</a>
+        <a href="rankings.html">ランキング</a>
+        <a href="types.html">男性攻略</a>
+        <a href="columns.html">恋愛コラム</a>
+        <a href="compat.html">相性</a>
+        <a href="note.html">note記事</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <img class="diag-banner" src="public/anohitonombtisuisoku.png" alt="あの人のMBTI推測診断">
+    <h1 class="page-title">あの人のMBTI推測診断</h1>
+    <p class="lead">LINE・距離感・恋愛中の態度から、あの人に近いMBTIタイプを推測します。</p>
+    <p class="compat-caution">本人のMBTIが分からなくても大丈夫。これは正式なMBTI診断ではなく、行動パターンから「近そうなタイプ傾向」を推測する診断です。</p>
+
+    <div id="guess-quiz" class="quiz"></div>
+    <button type="button" class="btn lovetype-submit" id="guess-go">推測してみる</button>
+
+    <section id="guess-result" class="compat-result" hidden></section>
+
+    <p style="margin-top:24px"><a class="btn outline" href="diagnosis.html">ほかの診断を見る</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="public/icon.png" alt="">
+        <p class="site-name">MBTI恋愛ラボ</p>
+      </div>
+      <p class="footer-desc">MBTIで恋愛心理を読み解く総合メディア。好き避け・未読無視・脈ありサイン・相性・16タイプ別の男性攻略を分析します。</p>
+      <p class="footer-links">
+        <a href="diagnosis.html">診断一覧</a> ・
+        <a href="rankings.html">ランキング</a> ・
+        <a href="types.html">男性攻略</a> ・
+        <a href="columns.html">恋愛コラム</a> ・
+        <a href="compat.html">相性</a> ・
+        <a href="intj.html">案内人について</a>
+      </p>
+      <p class="footer-links">
+        <a href="https://note.com/intj_analyst" target="_blank" rel="noopener">note</a> ・
+        <a href="https://twitter.com/example" target="_blank" rel="noopener">X（旧Twitter）</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/mbti.js?v=1"></script>
+  <script src="assets/js/guess-type.js?v=2"></script>
+</body>
+</html>

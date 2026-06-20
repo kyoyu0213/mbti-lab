@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>あの人のMBTI推測診断｜MBTI恋愛ラボ</title>
-  <meta name="description" content="好きな人・彼の行動やLINE・距離感から、近そうなMBTIタイプを推測する診断。本人のMBTIが分からなくても、行動パターンから近いタイプ傾向が分かります。">
+  <title>恋愛診断一覧｜MBTI恋愛ラボ</title>
+  <meta name="description" content="MBTI恋愛ラボの診断メニュー。あの人のMBTI推測・恋愛タイプ・相性・恋愛拗らせ・ダメ男ホイホイなど、気になる恋の悩みから選んで無料で診断できます。">
   <link rel="icon" href="public/icon.png">
   <link rel="apple-touch-icon" href="public/icon.png">
-  <link rel="stylesheet" href="assets/css/styles.css?v=14">
+  <link rel="stylesheet" href="assets/css/styles.css?v=17">
 </head>
 <body>
   <header class="site-header">
@@ -26,15 +26,47 @@
   </header>
 
   <main class="container">
-    <img class="diag-banner" src="public/anohitonombtisuisoku.png" alt="あの人のMBTI推測診断">
-    <h1 class="page-title">あの人のMBTI推測診断</h1>
-    <p class="lead">LINE・距離感・恋愛中の態度から、あの人に近いMBTIタイプを推測します。</p>
-    <p class="compat-caution">本人のMBTIが分からなくても大丈夫。これは正式なMBTI診断ではなく、行動パターンから「近そうなタイプ傾向」を推測する診断です。</p>
+    <h1 class="page-title">恋愛診断一覧</h1>
+    <p class="lead">気になる恋の悩みから選んで、無料で診断できます。あなたや、あの人の恋愛タイプを読み解いてみましょう。</p>
 
-    <div id="guess-quiz" class="quiz"></div>
-    <button type="button" class="btn lovetype-submit" id="guess-go">推測してみる</button>
-
-    <section id="guess-result" class="compat-result" hidden></section>
+    <div class="diag-grid diag-grid--menu">
+      <article class="diag-card">
+        <div class="diag-art diag-art--person" aria-hidden="true"></div>
+        <h2>あの人の<br>MBTI推測診断</h2>
+        <p class="diag-desc">彼の行動やLINEから、近いタイプを推測</p>
+        <a class="btn" href="guess-type.html">診断する</a>
+      </article>
+      <article class="diag-card">
+        <div class="diag-art diag-art--love" aria-hidden="true"></div>
+        <h2>MBTI<br>恋愛タイプ診断</h2>
+        <p class="diag-desc">あなたの恋愛傾向と幸せのヒントが分かる</p>
+        <a class="btn" href="love-type.html">診断する</a>
+      </article>
+      <article class="diag-card">
+        <div class="diag-art diag-art--compat" aria-hidden="true"></div>
+        <h2>MBTI<br>恋愛相性診断</h2>
+        <p class="diag-desc">あなたとあの人の相性をチェック</p>
+        <a class="btn" href="compat.html">診断する</a>
+      </article>
+      <article class="diag-card">
+        <div class="diag-art diag-art--kompleks" aria-hidden="true"></div>
+        <h2>恋愛<br>拗らせタイプ診断</h2>
+        <p class="diag-desc">好きになるほど苦しくなる理由を診断</p>
+        <a class="btn" href="love-kompleks.html">診断する</a>
+      </article>
+      <article class="diag-card">
+        <div class="diag-art diag-art--dame" aria-hidden="true"></div>
+        <h2>ダメ男<br>ホイホイ診断</h2>
+        <p class="diag-desc">なぜか問題のある相手に惹かれる理由を診断</p>
+        <a class="btn" href="dameotoko-diagnosis.html">診断する</a>
+      </article>
+      <article class="diag-card">
+        <div class="diag-art diag-art--numa" aria-hidden="true"></div>
+        <h2>恋愛<br>沼診断</h2>
+        <p class="diag-desc">あなたが沼りやすい男性タイプを診断</p>
+        <a class="btn" href="love-numa.html">診断する</a>
+      </article>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -45,11 +77,11 @@
       </div>
       <p class="footer-desc">MBTIで恋愛心理を読み解く総合メディア。好き避け・未読無視・脈ありサイン・相性・16タイプ別の男性攻略を分析します。</p>
       <p class="footer-links">
-        <a href="love-type.html">恋愛タイプ診断</a> ・
-        <a href="compat.html">相性診断</a> ・
         <a href="rankings.html">ランキング</a> ・
         <a href="types.html">男性攻略</a> ・
         <a href="columns.html">恋愛コラム</a> ・
+        <a href="compat.html">相性</a> ・
+        <a href="note.html">note記事</a> ・
         <a href="intj.html">案内人について</a>
       </p>
       <p class="footer-links">
@@ -58,8 +90,5 @@
       </p>
     </div>
   </footer>
-
-  <script src="assets/js/mbti.js?v=1"></script>
-  <script src="assets/js/guess-type.js?v=2"></script>
 </body>
 </html>
