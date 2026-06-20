@@ -1033,6 +1033,15 @@ img {
   }
 }
 
+/* ===== MBTIタイプ表記（日本語名称・グループ色） ===== */
+.type-name { color: var(--pink-deep); font-weight: 800; margin-right: 5px; }
+.type-badge.mbti-NT { background: linear-gradient(135deg, #b6a4e0, #8f7ac6); }
+.type-badge.mbti-NF { background: linear-gradient(135deg, #8ed4be, #57b394); }
+.type-badge.mbti-SJ { background: linear-gradient(135deg, #9fc6ef, #6ea2d9); }
+.type-badge.mbti-SP { background: linear-gradient(135deg, #f1c889, #e3a557); }
+.avatar-cap b { line-height: 1.2; }
+.avatar-cap .mbti-jp { display: block; font-size: 0.62rem; color: var(--muted); }
+
 /* ===== 診断ページのバナー画像 ===== */
 .diag-banner {
   display: block;

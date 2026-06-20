@@ -13,6 +13,7 @@
     ISTJ:'#', ISTP:'#', ISFJ:'#', ISFP:'#', ESTJ:'#', ESTP:'#', ESFJ:'#', ESFP:'#'
   };
   const COMPAT_GUIDE_URL = '#'; // MBTI恋愛相性大全
+  const L = (typeof mbtiLabel === 'function') ? mbtiLabel : (c => c); // INTP（論理学者）
 
   function matchCount(a, b) {
     let m = 0;
@@ -72,8 +73,8 @@
 
   function articleCards(a, b) {
     return [
-      { title: `${a}タイプの恋愛記事を見る`, url: TYPE_ARTICLE[a] || '#' },
-      { title: `${b}タイプの恋愛記事を見る`, url: TYPE_ARTICLE[b] || '#' },
+      { title: `${L(a)}タイプの恋愛記事を見る`, url: TYPE_ARTICLE[a] || '#' },
+      { title: `${L(b)}タイプの恋愛記事を見る`, url: TYPE_ARTICLE[b] || '#' },
       { title: 'MBTI恋愛相性大全を見る', url: COMPAT_GUIDE_URL }
     ];
   }
@@ -86,7 +87,7 @@
     if (!selA || !selB || !btn || !out) return;
 
     const opts = '<option value="">選択してください</option>' +
-      TYPES.map(t => `<option value="${t}">${t}</option>`).join('');
+      TYPES.map(t => `<option value="${t}">${L(t)}</option>`).join('');
     selA.innerHTML = opts;
     selB.innerHTML = opts;
 
@@ -110,7 +111,7 @@
         : '';
       out.innerHTML = `
         <div class="result-card">
-          <p class="result-pair">${a}<span>×</span>${b}</p>
+          <p class="result-pair">あなた ${L(a)}<span>×</span>あの人 ${L(b)}</p>
           <p class="result-title">${r.title}</p>
           <div class="score"><span class="score-num">${r.score}</span><span class="score-unit">点</span></div>
           <p class="result-feature">${r.feature}</p>

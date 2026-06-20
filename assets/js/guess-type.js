@@ -198,13 +198,15 @@
          + (s.J >= s.P ? 'J' : 'P');
   }
 
+  const L = (typeof mbtiLabel === 'function') ? mbtiLabel : (c => c); // INTP（論理学者）
+
   function articleCard(type) {
     const url = MALE_ARTICLE[type] || '#';
     const ext = url.startsWith('http');
     const at = ext ? ' target="_blank" rel="noopener"' : '';
     return `<article class="card">
-      <h4>${type}男性の攻略記事</h4>
-      <p>${type}タイプ傾向の彼の、好きな人への態度・脈ありサイン・落とし穴を解説。</p>
+      <h4>${L(type)}男性の攻略記事</h4>
+      <p>${L(type)}タイプ傾向の彼の、好きな人への態度・脈ありサイン・落とし穴を解説。</p>
       <a class="btn" href="${url}"${at}>noteで読む</a>
     </article>`;
   }
@@ -248,7 +250,7 @@
       out.innerHTML = `
         <div class="result-card">
           <p class="result-lead">あの人は…</p>
-          <p class="result-title">${type}タイプ傾向</p>
+          <p class="result-title">${L(type)}タイプ傾向</p>
           <p class="result-catch">「${r.catch}」</p>
           <p class="result-feature">${r.love}</p>
         </div>
@@ -259,7 +261,7 @@
         <h3 class="relate-head">あの人を攻略するなら</h3>
         <div class="cards">${articleCard(type)}</div>
         <button type="button" class="btn outline lovetype-retry" id="guess-retry">もう一度診断する</button>
-        <p class="compat-note">※ これは行動から近いタイプを推測する診断で、正式なMBTIではありません。あくまで「${type}に近いタイプ傾向」として、相手を理解するヒントにしてください。</p>
+        <p class="compat-note">※ これは行動から近いタイプを推測する診断で、正式なMBTIではありません。あくまで「${L(type)}に近いタイプ傾向」として、相手を理解するヒントにしてください。</p>
       `;
       out.hidden = false;
       out.scrollIntoView({ behavior: 'smooth', block: 'start' });

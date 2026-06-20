@@ -146,13 +146,15 @@
       { t: 'rescue', label: '相手を理解して支えること' } ] }
   ];
 
+  const L = (typeof mbtiLabel === 'function') ? mbtiLabel : (c => c); // INTP（論理学者）
+
   function articleCard(code) {
     const url = FEMALE_ARTICLE[code] || '#';
     const ext = url.startsWith('http');
     const at = ext ? ' target="_blank" rel="noopener"' : '';
     return `<article class="card">
-      <h4>${code}女性の恋愛タイプ</h4>
-      <p>${code}女性の恋愛傾向・本音・幸せになるヒントをくわしく解説。</p>
+      <h4>${L(code)}女性の恋愛タイプ</h4>
+      <p>${L(code)}女性の恋愛傾向・本音・幸せになるヒントをくわしく解説。</p>
       <a class="btn" href="${url}"${at}>noteで読む</a>
     </article>`;
   }
