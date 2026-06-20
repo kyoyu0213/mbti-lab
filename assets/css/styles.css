@@ -887,38 +887,95 @@ img {
   color: var(--ink-soft);
 }
 
-/* コラム記事（読み物） */
+/* ===== コラム記事（読み物）レイアウト ===== */
+/* 1. 本文幅を狭くして読みやすく */
+.col-article { max-width: 960px; margin-left: auto; margin-right: auto; }
+.col-article > .article-meta,
+.col-article > .page-title,
+.col-article > .article-lead,
+.col-article > .article { max-width: 860px; margin-left: auto; margin-right: auto; }
+
 .article-meta { display: flex; align-items: center; gap: 10px; margin: 2px 0 10px; color: var(--muted); font-size: 0.82rem; }
+
+/* 2. 導入文を目立たせる */
 .article-lead {
-  margin: 0 0 22px;
-  padding: 16px 18px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #fff6fa, #fff);
+  position: relative;
+  margin: 0 0 28px;
+  padding: 22px 22px 22px 54px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #fff2f8, #ffffff);
   border: 1px solid var(--pink-line);
+  box-shadow: 0 8px 24px rgba(255, 138, 180, 0.14);
   color: var(--ink-soft);
-  line-height: 1.95;
+  font-size: 1.04rem;
+  line-height: 2.05;
 }
+.article-lead::before {
+  content: '❝';
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  color: var(--pink);
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .article { line-height: 1.95; }
+
+/* 3. 見出しデザイン強化 */
 .article h2 {
-  margin: 34px 0 12px;
-  padding-left: 12px;
-  border-left: 5px solid var(--pink);
+  margin: 42px 0 16px;
+  padding: 4px 0 4px 16px;
+  border-left: 6px solid var(--pink);
   color: var(--pink-deep);
-  font-size: 1.18rem;
+  font-size: 1.32rem;
   font-weight: 900;
   line-height: 1.5;
 }
 .article p { margin: 0 0 14px; color: var(--ink); }
-.article ul { margin: 0 0 16px; padding-left: 0; list-style: none; }
+
+/* 4. 箇条書きをカード化 */
+.article ul { margin: 0 0 18px; padding: 0; list-style: none; display: grid; gap: 10px; }
 .article ul li {
   position: relative;
-  margin: 0 0 9px;
-  padding-left: 22px;
+  margin: 0;
+  padding: 12px 14px 12px 38px;
+  background: #fff;
+  border: 1px solid var(--pink-line);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(255, 138, 180, 0.08);
   color: var(--ink);
+  font-size: 0.95rem;
 }
-.article ul li::before { content: '♡'; position: absolute; left: 2px; color: var(--pink); font-size: 0.9rem; }
-.article .mbti-row { margin: 0 0 8px; padding-left: 0; }
-.article .mbti-row b { color: var(--pink-deep); }
+.article ul li::before {
+  content: '♡';
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  color: var(--pink);
+  font-size: 0.9rem;
+}
+
+/* 5. 16タイプ別解説をグリッド化 */
+.mbti-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 6px 0 18px;
+}
+.mbti-card {
+  background: linear-gradient(180deg, #ffffff, #fff8fb);
+  border: 1px solid var(--pink-line);
+  border-radius: 14px;
+  padding: 13px 15px;
+  box-shadow: 0 2px 8px rgba(255, 138, 180, 0.08);
+}
+.mbti-name { margin: 0 0 6px; font-weight: 900; color: var(--pink-deep); font-size: 0.96rem; }
+.mbti-name::before { content: '♡ '; color: var(--pink); }
+.mbti-desc { margin: 0; font-size: 0.9rem; line-height: 1.75; color: var(--ink); }
+
+/* 注意喚起カラム */
 .article-callout {
   margin: 18px 0;
   padding: 16px 18px;
@@ -926,6 +983,38 @@ img {
   background: #fff0f6;
   border: 1px dashed var(--pink);
   color: var(--ink);
+}
+
+/* 7. 関連診断・記事カードを整理（コラム内のみ） */
+.col-article .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.col-article .cards .card { display: flex; flex-direction: column; }
+.col-article .cards .card p { font-size: 0.86rem; }
+.col-article .cards .card .btn { margin-top: auto; }
+
+/* 8. 下部CTAエリア */
+.col-cta {
+  max-width: 860px;
+  margin: 34px auto 8px;
+  padding: 24px 22px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #ffe1ee, #fff3f8);
+  border: 1px solid var(--pink-line);
+  box-shadow: 0 10px 28px rgba(255, 138, 180, 0.18);
+  text-align: center;
+}
+.col-cta h3 { margin: 0 0 6px; color: var(--pink-deep); font-size: 1.16rem; font-weight: 900; }
+.col-cta p { margin: 0 0 16px; color: var(--ink-soft); font-size: 0.9rem; }
+.col-cta .cta-btns { display: flex; flex-direction: column; gap: 10px; max-width: 440px; margin: 0 auto; }
+.col-cta .cta-btns .btn { width: 100%; }
+
+@media (min-width: 560px) {
+  .mbti-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 760px) {
+  .col-article .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 900px) {
+  .mbti-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 .cards {
