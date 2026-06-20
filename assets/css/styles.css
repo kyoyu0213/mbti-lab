@@ -492,6 +492,38 @@ img {
     linear-gradient(135deg, #ff8f6b, #e8324f);
 }
 
+.diag-art--kuro {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 21C7 17 3 13.4 3 9.2 3 6.9 4.9 5 7.2 5c1.6 0 3 .9 3.8 2.2C12 5.9 13.2 5 14.8 5 17.1 5 19 6.9 19 9.2c0 4.2-4 7.8-7 11.8z'/%3E%3C/svg%3E") center/44% no-repeat,
+    linear-gradient(135deg, #9b6a9e, #4f2a56);
+}
+
+.diag-art--nogashi {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 21C7 17 3 13.4 3 9.2 3 6.9 4.9 5 7.2 5c1.6 0 3 .9 3.8 2.2C12 5.9 13.2 5 14.8 5 17.1 5 19 6.9 19 9.2c0 4.2-4 7.8-7 11.8z'/%3E%3C/svg%3E") center/44% no-repeat,
+    linear-gradient(135deg, #f6a9c0, #c98aa8);
+}
+
+.diag-art--stalker {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6'/%3E%3Cpath d='M20 20l-5-5'/%3E%3Cpath d='M10.5 8.3c.9-1 2.4-.6 2.4.6 0 1-1.2 1.1-1.2 2'/%3E%3C/svg%3E") center/48% no-repeat,
+    linear-gradient(135deg, #bba0d6, #6b4f9e);
+}
+
+.diag-art--jealousy {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 21C7 17 3 13.4 3 9.2 3 6.9 4.9 5 7.2 5c1.6 0 3 .9 3.8 2.2C12 5.9 13.2 5 14.8 5 17.1 5 19 6.9 19 9.2c0 4.2-4 7.8-7 11.8z'/%3E%3Cpath d='M9 9c1 2 5 2 6 0' stroke='%23e84a6f' stroke-width='1.2' fill='none'/%3E%3C/svg%3E") center/44% no-repeat,
+    linear-gradient(135deg, #ff7a9c, #b32a55);
+}
+
 /* LINE風 吹き出しデモ */
 .line-demo { display: flex; flex-direction: column; gap: 7px; max-width: 320px; margin: 4px 0 16px; }
 .line-bubble { max-width: 80%; padding: 9px 14px; border-radius: 16px; font-size: 0.88rem; line-height: 1.5; }
