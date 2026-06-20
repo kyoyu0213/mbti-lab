@@ -7,7 +7,7 @@
   <meta name="description" content="MBTI恋愛ラボの診断メニュー。あの人のMBTI推測・恋愛タイプ・相性・恋愛拗らせ・ダメ男ホイホイなど、気になる恋の悩みから選んで無料で診断できます。">
   <link rel="icon" href="public/icon.png">
   <link rel="apple-touch-icon" href="public/icon.png">
-  <link rel="stylesheet" href="assets/css/styles.css?v=22">
+  <link rel="stylesheet" href="assets/css/styles.css?v=23">
 </head>
 <body>
   <header class="site-header">
@@ -29,80 +29,109 @@
     <h1 class="page-title">恋愛診断一覧</h1>
     <p class="lead">気になる恋の悩みから選んで、無料で診断できます。あなたや、あの人の恋愛タイプを読み解いてみましょう。</p>
 
-    <div class="diag-grid diag-grid--menu">
-      <article class="diag-card">
-        <div class="diag-art diag-art--person" aria-hidden="true"></div>
-        <h2>あの人の<br>MBTI推測診断</h2>
-        <p class="diag-desc">彼の行動やLINEから、近いタイプを推測</p>
-        <a class="btn" href="guess-type.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--love" aria-hidden="true"></div>
-        <h2>MBTI<br>恋愛タイプ診断</h2>
-        <p class="diag-desc">あなたの恋愛傾向と幸せのヒントが分かる</p>
-        <a class="btn" href="love-type.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--compat" aria-hidden="true"></div>
-        <h2>MBTI<br>恋愛相性診断</h2>
-        <p class="diag-desc">あなたとあの人の相性をチェック</p>
-        <a class="btn" href="compat.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--kompleks" aria-hidden="true"></div>
-        <h2>恋愛<br>拗らせタイプ診断</h2>
-        <p class="diag-desc">好きになるほど苦しくなる理由を診断</p>
-        <a class="btn" href="love-kompleks.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--dame" aria-hidden="true"></div>
-        <h2>ダメ男<br>ホイホイ診断</h2>
-        <p class="diag-desc">なぜか問題のある相手に惹かれる理由を診断</p>
-        <a class="btn" href="dameotoko-diagnosis.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--numa" aria-hidden="true"></div>
-        <h2>恋愛<br>沼診断</h2>
-        <p class="diag-desc">あなたが沼りやすい男性タイプを診断</p>
-        <a class="btn" href="love-numa.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--check" aria-hidden="true"></div>
-        <h2>脈なし？<br>好き避け？見極め</h2>
-        <p class="diag-desc">彼の冷たい態度が脈なしか好き避けかを診断</p>
-        <a class="btn" href="sukizake-check.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--dep" aria-hidden="true"></div>
-        <h2>彼<br>依存度診断</h2>
-        <p class="diag-desc">好きな人に振り回されやすい度合いをチェック</p>
-        <a class="btn" href="dependence-check.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--line" aria-hidden="true"></div>
-        <h2>LINE<br>考えすぎ診断</h2>
-        <p class="diag-desc">好きな人の返信を深読みしすぎていないかチェック</p>
-        <a class="btn" href="line-overthinking.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--honmei" aria-hidden="true"></div>
-        <h2>本命に<br>冷たい診断</h2>
-        <p class="diag-desc">彼の冷たさが本命ゆえの不器用さかをチェック</p>
-        <a class="btn" href="honmei-cold-check.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--ex" aria-hidden="true"></div>
-        <h2>元彼<br>引きずり度診断</h2>
-        <p class="diag-desc">もう忘れたはずの元彼をどれくらい引きずっているかチェック</p>
-        <a class="btn" href="ex-boyfriend-check.html">診断する</a>
-      </article>
-      <article class="diag-card">
-        <div class="diag-art diag-art--jirai" aria-hidden="true"></div>
-        <h2>恋愛<br>地雷診断</h2>
-        <p class="diag-desc">あなたが恋愛で踏みやすい失敗パターンをチェック</p>
-        <a class="btn" href="love-jirai.html">診断する</a>
-      </article>
-    </div>
+    <!-- ① 相手の気持ちを知る -->
+    <section class="diag-cat">
+      <h2 class="diag-cat-title">相手の気持ちを知る</h2>
+      <p class="diag-cat-sub">気になる彼の本音や、冷たい態度の理由を読み解く診断。</p>
+      <div class="diag-grid diag-grid--menu">
+        <article class="diag-card">
+          <div class="diag-art diag-art--person" aria-hidden="true"></div>
+          <h2>あの人の<br>MBTI推測診断</h2>
+          <p class="diag-desc">彼の行動やLINEから、近いタイプを推測</p>
+          <a class="btn" href="guess-type.html">診断する</a>
+        </article>
+        <article class="diag-card">
+          <div class="diag-art diag-art--check" aria-hidden="true"></div>
+          <h2>脈なし？<br>好き避け？見極め</h2>
+          <p class="diag-desc">彼の冷たい態度が脈なしか好き避けかを診断</p>
+          <a class="btn" href="sukizake-check.html">診断する</a>
+        </article>
+        <article class="diag-card">
+          <div class="diag-art diag-art--honmei" aria-hidden="true"></div>
+          <h2>本命に<br>冷たい診断</h2>
+          <p class="diag-desc">彼の冷たさが本命ゆえの不器用さかをチェック</p>
+          <a class="btn" href="honmei-cold-check.html">診断する</a>
+        </article>
+        <article class="diag-card">
+          <div class="diag-art diag-art--compat" aria-hidden="true"></div>
+          <h2>MBTI<br>恋愛相性診断</h2>
+          <p class="diag-desc">あなたとあの人の相性をチェック</p>
+          <a class="btn" href="compat.html">診断する</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ② 自分の恋愛タイプを知る -->
+    <section class="diag-cat">
+      <h2 class="diag-cat-title">自分の恋愛タイプを知る</h2>
+      <p class="diag-cat-sub">あなたの恋愛傾向や、無意識のクセ・不安を見つける診断。</p>
+      <div class="diag-grid diag-grid--menu">
+        <article class="diag-card">
+          <div class="diag-art diag-art--love" aria-hidden="true"></div>
+          <h2>MBTI<br>恋愛タイプ診断</h2>
+          <p class="diag-desc">あなたの恋愛傾向と幸せのヒントが分かる</p>
+          <a class="btn" href="love-type.html">診断する</a>
+        </article>
+        <article class="diag-card">
+          <div class="diag-art diag-art--kompleks" aria-hidden="true"></div>
+          <h2>恋愛<br>拗らせタイプ診断</h2>
+          <p class="diag-desc">好きになるほど苦しくなる理由を診断</p>
+          <a class="btn" href="love-kompleks.html">診断する</a>
+        </article>
+        <article class="diag-card">
+          <div class="diag-art diag-art--jirai" aria-hidden="true"></div>
+          <h2>恋愛<br>地雷診断</h2>
+          <p class="diag-desc">あなたが恋愛で踏みやすい失敗パターンをチェック</p>
+          <a class="btn" href="love-jirai.html">診断する</a>
+        </article>
+        <article class="diag-card">
+          <div class="diag-art diag-art--dep" aria-hidden="true"></div>
+          <h2>彼<br>依存度診断</h2>
+          <p class="diag-desc">好きな人に振り回されやすい度合いをチェック</p>
+          <a class="btn" href="dependence-check.html">診断する</a>
+        </article>
+        <article class="diag-card">
+          <div class="diag-art diag-art--line" aria-hidden="true"></div>
+          <h2>LINE<br>考えすぎ診断</h2>
+          <p class="diag-desc">好きな人の返信を深読みしすぎていないかチェック</p>
+          <a class="btn" href="line-overthinking.html">診断する</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ③ 惹かれる相手・ハマり方 -->
+    <section class="diag-cat">
+      <h2 class="diag-cat-title">惹かれる相手・ハマり方</h2>
+      <p class="diag-cat-sub">あなたがつい惹かれてしまう相手や、沼りやすさを診断。</p>
+      <div class="diag-grid diag-grid--menu">
+        <article class="diag-card">
+          <div class="diag-art diag-art--dame" aria-hidden="true"></div>
+          <h2>ダメ男<br>ホイホイ診断</h2>
+          <p class="diag-desc">なぜか問題のある相手に惹かれる理由を診断</p>
+          <a class="btn" href="dameotoko-diagnosis.html">診断する</a>
+        </article>
+        <article class="diag-card">
+          <div class="diag-art diag-art--numa" aria-hidden="true"></div>
+          <h2>恋愛<br>沼診断</h2>
+          <p class="diag-desc">あなたが沼りやすい男性タイプを診断</p>
+          <a class="btn" href="love-numa.html">診断する</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ④ 復縁・未練・過去の恋 -->
+    <section class="diag-cat">
+      <h2 class="diag-cat-title">復縁・未練・過去の恋</h2>
+      <p class="diag-cat-sub">終わった恋の引きずり度や、心の整理ぐあいをチェック。</p>
+      <div class="diag-grid diag-grid--menu">
+        <article class="diag-card">
+          <div class="diag-art diag-art--ex" aria-hidden="true"></div>
+          <h2>元彼<br>引きずり度診断</h2>
+          <p class="diag-desc">もう忘れたはずの元彼をどれくらい引きずっているかチェック</p>
+          <a class="btn" href="ex-boyfriend-check.html">診断する</a>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

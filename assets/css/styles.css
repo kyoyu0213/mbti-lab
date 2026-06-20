@@ -506,6 +506,21 @@ img {
 
 /* 診断メニュー（diagnosis.html）と「すべての診断を見る」リンク */
 .diag-grid--menu { margin: 8px auto 0; max-width: 940px; }
+
+/* 診断一覧のカテゴリ分け */
+.diag-cat { margin: 0 0 28px; }
+.diag-cat-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 4px;
+  color: var(--pink-deep);
+  font-weight: 900;
+  font-size: 1.18rem;
+}
+.diag-cat-title::before { content: '✦'; color: var(--pink); font-size: 0.95rem; }
+.diag-cat-sub { margin: 0 0 14px; color: var(--muted); font-size: 0.85rem; }
+.diag-cat .diag-grid--menu { margin: 0; max-width: none; }
 .diag-grid--menu .diag-card h2 { margin-bottom: 8px; }
 .diag-desc { font-size: 0.78rem; color: var(--muted); margin: 0 0 12px; line-height: 1.45; }
 .diag-alllink { margin: 14px 0 0; }
