@@ -577,8 +577,8 @@ img {
 /* 各タイプは元画像の顔位置が違うため、縦位置を個別調整して中央に揃える */
 .avatar--intp { background-image: url("../../public/ui/type-intp-face.png"); background-position: center 34%; }
 .avatar--intj { background-image: url("../../public/ui/type-intj-face.png"); background-position: center 30%; }
-.avatar--entj { background-image: url("../../public/ui/type-entj-face.png"); background-position: center 48%; }
-.avatar--istj { background-image: url("../../public/ui/type-istj-face.png"); background-position: center 50%; }
+.avatar--entj { background-image: url("../../public/type-entj-face.png"); background-position: center; background-size: cover; }
+.avatar--istj { background-image: url("../../public/type-istj-face.png"); background-position: center; background-size: cover; }
 .avatar--infp { background-image: url("../../public/ui/type-infp-face.png"); background-position: center 32%; }
 
 .avatar-cap {
