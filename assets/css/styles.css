@@ -524,6 +524,69 @@ img {
     linear-gradient(135deg, #ff7a9c, #b32a55);
 }
 
+/* 恋愛腹黒度：白ハート＋小さな黒ハート（小悪魔）×ダークプラム */
+.diag-art--haraguro {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 21C7 17 3 13.4 3 9.2 3 6.9 4.9 5 7.2 5c1.6 0 3 .9 3.8 2.2C12 5.9 13.2 5 14.8 5 17.1 5 19 6.9 19 9.2c0 4.2-4 7.8-7 11.8z'/%3E%3Cpath fill='%232b1830' d='M12 15.6c-1.9-1.5-3.4-2.9-3.4-4.5 0-.9.7-1.6 1.6-1.6.6 0 1.2.35 1.5.9.3-.55.9-.9 1.5-.9.9 0 1.6.7 1.6 1.6 0 1.6-1.5 3-3.4 4.5z'/%3E%3C/svg%3E") center/46% no-repeat,
+    linear-gradient(135deg, #b86fae, #45204f);
+}
+
+/* 根にもつ度：白ハート＋鍵穴（閉じ込める）×インディゴ */
+.diag-art--grudge {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 21C7 17 3 13.4 3 9.2 3 6.9 4.9 5 7.2 5c1.6 0 3 .9 3.8 2.2C12 5.9 13.2 5 14.8 5 17.1 5 19 6.9 19 9.2c0 4.2-4 7.8-7 11.8z'/%3E%3Ccircle cx='12' cy='10.6' r='1.5' fill='%234a5085'/%3E%3Cpath d='M11.3 11.4h1.4l-.4 2.4h-.6z' fill='%234a5085'/%3E%3C/svg%3E") center/46% no-repeat,
+    linear-gradient(135deg, #8e95c6, #3c4170);
+}
+
+/* 恋愛満足度：白ハート＋チェック×明るいハッピーピンク */
+.diag-art--satisfaction {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 21C7 17 3 13.4 3 9.2 3 6.9 4.9 5 7.2 5c1.6 0 3 .9 3.8 2.2C12 5.9 13.2 5 14.8 5 17.1 5 19 6.9 19 9.2c0 4.2-4 7.8-7 11.8z'/%3E%3Cpath d='M9.4 11.2l1.7 1.7 3.4-3.4' fill='none' stroke='%23ff6fa3' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/46% no-repeat,
+    linear-gradient(135deg, #ffb0cb, #ff7aaf);
+}
+
+/* 恋愛コンプレックス：白ハート＋ひび（鏡）×やさしいモーヴ */
+.diag-art--complex {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 21C7 17 3 13.4 3 9.2 3 6.9 4.9 5 7.2 5c1.6 0 3 .9 3.8 2.2C12 5.9 13.2 5 14.8 5 17.1 5 19 6.9 19 9.2c0 4.2-4 7.8-7 11.8z'/%3E%3Cpath d='M12 6.5l-1.4 4 2.2 1.3-1.6 4.2' fill='none' stroke='%23c98ab8' stroke-width='1.1' stroke-linejoin='round'/%3E%3C/svg%3E") center/46% no-repeat,
+    linear-gradient(135deg, #d29ac4, #8a5a86);
+}
+
+/* 求めすぎ度：白い王冠×ローズ */
+.diag-art--expectation {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M4 8l3 3 5-5 5 5 3-3v8.5c0 .8-.7 1.5-1.5 1.5h-13C4.7 17.5 4 16.8 4 16z'/%3E%3Ccircle cx='4' cy='7' r='1.3'/%3E%3Ccircle cx='20' cy='7' r='1.3'/%3E%3Ccircle cx='12' cy='4.5' r='1.3'/%3E%3C/svg%3E") center/48% no-repeat,
+    linear-gradient(135deg, #ff9bbb, #d65f8f);
+}
+
+/* 恋愛フェロモン：白ハート＋きらめき×ローズレッド（色気） */
+.diag-art--pheromone {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 20.5C7.5 17 4 13.7 4 9.9 4 7.8 5.7 6 7.9 6c1.5 0 2.8.8 3.5 2 .7-1.2 2-2 3.5-2C17.1 6 18.8 7.8 18.8 9.9c0 3.8-3.5 7.1-6.8 10.6z'/%3E%3Cpath d='M18.5 4l.6 1.6L20.7 6l-1.6.6-.6 1.6-.6-1.6L16.3 6l1.6-.4z'/%3E%3C/svg%3E") center/46% no-repeat,
+    linear-gradient(135deg, #ff6f9a, #c02b5e);
+}
+
+/* 恋愛支配欲：白い鍵×ロイヤルピンク（主導権） */
+.diag-art--control {
+  width: 74px;
+  height: 78px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='8.5' cy='8.5' r='3.6'/%3E%3Cpath d='M11 11l6 6'/%3E%3Cpath d='M14.5 14.5l2 2'/%3E%3Cpath d='M16.5 16.5l1.6 1.6'/%3E%3C/svg%3E") center/48% no-repeat,
+    linear-gradient(135deg, #e87bb0, #9b3a72);
+}
+
 /* LINE風 吹き出しデモ */
 .line-demo { display: flex; flex-direction: column; gap: 7px; max-width: 320px; margin: 4px 0 16px; }
 .line-bubble { max-width: 80%; padding: 9px 14px; border-radius: 16px; font-size: 0.88rem; line-height: 1.5; }
