@@ -86,7 +86,8 @@ const featuredTypes = [
   {type:'ESFP',url:'https://note.com/intj_analyst/n/nb30cac97bf89'},
   {type:'INTP',url:'https://note.com/intj_analyst/n/n94f3a1e31821',label:'飽き性なINTP男が夢中になり続ける女性'},
   {type:'ESTP',url:'https://note.com/intj_analyst/n/n9c903f89d694',label:'ESTP男を沼らせる方法｜離れられなくなる女性'},
-  {type:'ENTJ',url:'https://note.com/intj_analyst/n/n9ccf9735132a',label:'ENTJ男が弱さを見せる唯一の女性'}
+  {type:'ENTJ',url:'https://note.com/intj_analyst/n/n9ccf9735132a',label:'ENTJ男が弱さを見せる唯一の女性'},
+  {type:'INTJ',url:'https://note.com/intj_analyst/n/n3c175d294fdd',label:'INTJ男が本気になると見せる独占欲・執着'}
 ];
 
 /* トップ：人気診断 */
@@ -127,6 +128,7 @@ const columnCategories = [
 /* note有料記事一覧（実記事・タイトル/アイキャッチ画像はnoteから取得） */
 const noteSections = [
   {category:'タイプ別｜彼の本音と攻略（男性）',tag:'彼の攻略',items:[
+    {title:'INTJ男が本気になると見せる意外な独占欲・執着｜冷静な彼が手放したくない女性',excerpt:'「いつも冷静で、何事にも動じなくて、ヤキモチなんて一生かかないタイプに見える」 「他の男性と話していても、彼は全然気にしていない様子。私への興味が薄いのかな…」…',img:'https://assets.st-note.com/production/uploads/images/289314566/rectangle_large_type_2_f070307717408a43f0d9b537db660156.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n3c175d294fdd'},
     {title:'INTJ男に溺愛される女性とは？合理主義の彼が手放せなくなる存在の条件',excerpt:'「どうしてこんなに冷たいの？」 「LINE もそっけないし、『好き』なんて言葉、一度も聞いたことがない…」 「…',img:'https://assets.st-note.com/production/uploads/images/281946722/rectangle_large_type_2_41120671fc9111fbc8baccacbce4546a.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/nfbefa346cf88'},
     {title:'飽き性なINTP男が夢中になり続ける女性｜彼を退屈させない関係の作り方',excerpt:'「付き合えたときはあんなに夢中だったのに、最近なんだかそっけない…」 「ケンカもしてないし、嫌われた覚えもない。なのに、彼の熱量だけが静かに下がっていく気がする」…',img:'https://assets.st-note.com/production/uploads/images/289244852/rectangle_large_type_2_de8d6902c67ae5989739a6fe3cc972bb.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n94f3a1e31821'},
     {title:'実は顔じゃない――INTP男が本気で惹かれる女性、恋愛対象外になる女性',excerpt:'「頭が良くて面白い話をしてくれるけど、何を考えているのかさっぱり分からない…」 「デート中も自分の世界に入っち…',img:'https://assets.st-note.com/production/uploads/images/281945781/rectangle_large_type_2_68059c01dce2c296771495344f8b6bb6.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n90001451cc43'},
