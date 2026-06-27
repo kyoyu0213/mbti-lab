@@ -85,7 +85,8 @@ const featuredTypes = [
   {type:'ESTP',url:'https://note.com/intj_analyst/n/nfceac847c4f8'},
   {type:'ESFP',url:'https://note.com/intj_analyst/n/nb30cac97bf89'},
   {type:'INTP',url:'https://note.com/intj_analyst/n/n94f3a1e31821',label:'飽き性なINTP男が夢中になり続ける女性'},
-  {type:'ESTP',url:'https://note.com/intj_analyst/n/n9c903f89d694',label:'ESTP男を沼らせる方法｜離れられなくなる女性'}
+  {type:'ESTP',url:'https://note.com/intj_analyst/n/n9c903f89d694',label:'ESTP男を沼らせる方法｜離れられなくなる女性'},
+  {type:'ENTJ',url:'https://note.com/intj_analyst/n/n9ccf9735132a',label:'ENTJ男が弱さを見せる唯一の女性'}
 ];
 
 /* トップ：人気診断 */
@@ -133,6 +134,7 @@ const noteSections = [
     {title:'INTP男は好きな人ほど避ける――脈なしと勘違いされる恋心の正体',excerpt:'「頭は良いし、話していて面白いのに、私のことになると急に冷たくなる」 「普段はあんなに饒舌なのに、二人きりにな…',img:'https://assets.st-note.com/production/uploads/images/283135253/rectangle_large_type_2_a1fdec913b6553c495bee0eabd7c3290.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n68a36c18da09'},
     {title:'INTP 男に溺愛される方法｜理論派男子が「唯一無二」と認める女性になる',excerpt:'この記事では、何を考えているかわからない、恋愛に淡白に見える INTP 男性が、どんな女性に心を奪われ、時間も…',img:'https://assets.st-note.com/production/uploads/images/279834010/rectangle_large_type_2_b02efe0d5ac171bc8a3993f66152fb3e.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n529c1357d391'},
     {title:'INTP 男の恋愛パターン｜好きになる流れ・付き合い方・あるある本音',excerpt:'この記事では、MBTI の中でも「哲学者」「論理学者」と呼ばれる INTP 男性の恋愛における思考回路、行動パ…',img:'https://assets.st-note.com/production/uploads/images/279833539/rectangle_large_type_2_85cb6725206d616112544b49419e646f.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n99cb391192b9'},
+    {title:'ENTJ男が弱さを見せる唯一の女性｜最強の彼が本音をさらけ出す相手とは',excerpt:'「いつも堂々としていて頼りになるけど、弱音なんて一度も聞いたことがない」 「何でも一人で完璧にこなしてしまうから、私が入り込む隙がない気がする」 「この人は、私…',img:'https://assets.st-note.com/production/uploads/images/289301240/rectangle_large_type_2_59ccc5747d71b1495f616d515cb15117.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n9ccf9735132a'},
     {title:'なぜ彼女だけ特別扱いされるのか？ENTJ男が本気で惚れる女性の条件',excerpt:'「リーダーシップがあって頼りになるけど、何を考えているのか全然分からない…」 「強引だし、自分の意見を絶対に曲…',img:'https://assets.st-note.com/production/uploads/images/281946572/rectangle_large_type_2_6b6c2cab9ffa8a365859ba1b1e2f5387.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/ne34603d2ac07'},
     {title:'ENTP男は追いかけたい――彼が手放せなくなる女性とは',excerpt:'「話は面白いけど、何を考えているか分からない」 「いつも議論好きで、からかわれてばかりで、本気なのか冗談なのか…',img:'https://assets.st-note.com/production/uploads/images/283094757/rectangle_large_type_2_f3309bd56f61a00f92c6ffb5949ceba3.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/nad4d3eb11812'},
     {title:'INFJ男は理解された瞬間に落ちる――彼が手放せなくなる女性とは',excerpt:'「とても優しくて、思いやりに溢れているのに、どこか一線を引かれているような、遠い存在に感じる」 「話していると…',img:'https://assets.st-note.com/production/uploads/images/283134884/rectangle_large_type_2_82acb6212363ac98a2e383d1974e941e.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/nb8c5e4c23c2c'},
