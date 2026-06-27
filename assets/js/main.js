@@ -48,13 +48,17 @@ function renderTypeCards(selector, types){
     const attr = ext ? ' target="_blank" rel="noopener"' : '';
     const label = ext ? 'noteで読む' : '記事を見る';
     const name = jp(t.type);
+    const labelHtml = t.label
+      ? `<span class="type-label">${t.label}</span>`
+      : `<span class="type-label">${name ? `<b class="type-name">${name}</b>` : ''}男性攻略</span>`;
+    const metaHtml = t.label ? '' : `<div class="meta">${tags}</div>`;
     return `
     <article class="card type-card-lg">
       <div class="type-head">
         <span class="type-badge mbti-${grp(t.type)}">${t.type}</span>
-        <span class="type-label">${name ? `<b class="type-name">${name}</b>` : ''}男性攻略</span>
+        ${labelHtml}
       </div>
-      <div class="meta">${tags}</div>
+      ${metaHtml}
       <a class="btn" href="${t.url || '#'}"${attr}>${label}</a>
     </article>`;
   }).join('');

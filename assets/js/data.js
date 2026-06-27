@@ -83,7 +83,8 @@ const featuredTypes = [
   {type:'ISTP',url:'https://note.com/intj_analyst/n/nd86e4c048c06'},
   {type:'ISFP',url:'https://note.com/intj_analyst/n/nf90247b71f84'},
   {type:'ESTP',url:'https://note.com/intj_analyst/n/nfceac847c4f8'},
-  {type:'ESFP',url:'https://note.com/intj_analyst/n/nb30cac97bf89'}
+  {type:'ESFP',url:'https://note.com/intj_analyst/n/nb30cac97bf89'},
+  {type:'INTP',url:'https://note.com/intj_analyst/n/n94f3a1e31821',label:'飽き性なINTP男が夢中になり続ける女性'}
 ];
 
 /* トップ：人気診断 */
@@ -124,6 +125,7 @@ const columnCategories = [
 /* note有料記事一覧（実記事・タイトル/アイキャッチ画像はnoteから取得） */
 const noteSections = [
   {category:'タイプ別｜彼の本音と攻略（男性）',tag:'彼の攻略',items:[
+    {title:'飽き性なINTP男が夢中になり続ける女性｜彼を退屈させない関係の作り方',excerpt:'「付き合えたときはあんなに夢中だったのに、最近なんだかそっけない…」 「ケンカもしてないし、嫌われた覚えもない。なのに、彼の熱量だけが静かに下がっていく気がする」…',img:'https://assets.st-note.com/production/uploads/images/289244852/rectangle_large_type_2_de8d6902c67ae5989739a6fe3cc972bb.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n94f3a1e31821'},
     {title:'INFP 男に溺愛される方法｜優しい理想主義者が「この子だけ」と決める女性',excerpt:'「気になる人が INFP だけど、何を考えているか分からない」 「もっと仲良くなりたいけど、どう接すれば良いの…',img:'https://assets.st-note.com/production/uploads/images/282528047/rectangle_large_type_2_f862ab902495bd86f137a7d604599781.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n7e0435072a84'},
     {title:'実は顔じゃない――INTP男が本気で惹かれる女性、恋愛対象外になる女性',excerpt:'「頭が良くて面白い話をしてくれるけど、何を考えているのかさっぱり分からない…」 「デート中も自分の世界に入っち…',img:'https://assets.st-note.com/production/uploads/images/281945781/rectangle_large_type_2_68059c01dce2c296771495344f8b6bb6.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n90001451cc43'},
     {title:'ISTJ男の本音完全解説｜好きな女性への態度・脈ありサイン・落とし方',excerpt:'「真面目で誠実なのは分かるけど、何を考えているのか全然分からない…」 「デートもいつも同じような感じで、ドキド…',img:'https://assets.st-note.com/production/uploads/images/281946381/rectangle_large_type_2_2a49e321aa4266b8beb068d6c84004cb.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n4ee8bed2f56f'},
