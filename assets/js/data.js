@@ -84,7 +84,8 @@ const featuredTypes = [
   {type:'ISFP',url:'https://note.com/intj_analyst/n/nf90247b71f84'},
   {type:'ESTP',url:'https://note.com/intj_analyst/n/nfceac847c4f8'},
   {type:'ESFP',url:'https://note.com/intj_analyst/n/nb30cac97bf89'},
-  {type:'INTP',url:'https://note.com/intj_analyst/n/n94f3a1e31821',label:'飽き性なINTP男が夢中になり続ける女性'}
+  {type:'INTP',url:'https://note.com/intj_analyst/n/n94f3a1e31821',label:'飽き性なINTP男が夢中になり続ける女性'},
+  {type:'ESTP',url:'https://note.com/intj_analyst/n/n9c903f89d694',label:'ESTP男を沼らせる方法｜離れられなくなる女性'}
 ];
 
 /* トップ：人気診断 */
@@ -145,6 +146,7 @@ const noteSections = [
     {title:'ESFJ 男に溺愛される方法｜温かな奉仕者が安心して全てを捧げたくなる女性',excerpt:'「優しすぎて、何を考えているか分からない」 「いつも私のために動いてくれるし、気を遣ってくれるけど、彼自身は何…',img:'https://assets.st-note.com/production/uploads/images/283105376/rectangle_large_type_2_5181ada2724eb95e2e71b6d48c045632.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n7f58d1b3eae9'},
     {title:'無口なISTP男が離れなくなる女性――彼が心を許した本命の特徴',excerpt:'「見た目は格好いいし、何でもできそうな雰囲気があるのに、とにかく無口で、何を考えているのかさっぱり分からない」…',img:'https://assets.st-note.com/production/uploads/images/283134258/rectangle_large_type_2_b5d57383f03010c0a737230b4dacd6dd.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/nd86e4c048c06'},
     {title:'なぜ彼女だけ心を許されたのか？ISFP男が深く愛する女性の条件',excerpt:'「すごく優しくて、一緒にいると心が落ち着くけど、何を考えているのか全然分からない」 「自分のことをほとんど話し…',img:'https://assets.st-note.com/production/uploads/images/283132454/rectangle_large_type_2_44084b097717016dec28a2085953563d.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/nf90247b71f84'},
+    {title:'ESTP男を沼らせる方法｜自由な彼が離れられなくなる女性の特徴',excerpt:'「付き合えたのに、いつまでも彼を自分のものにできた気がしない」 「一緒にいるときは最高に楽しいのに、離れた途端、彼はすぐ別の楽しいことを見つけて、私のことなんて…',img:'https://assets.st-note.com/production/uploads/images/289288346/rectangle_large_type_2_54d9dd904e571c4cff81ee280a1d3699.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n9c903f89d694'},
     {title:'ESTP男の本命になる方法｜遊び相手と本命女性の決定的な違い',excerpt:'「パワフルで格好いいし、何でもこなしちゃうけど、行動が予測できなくて不安になる」 「いつも自由に動き回っていて…',img:'https://assets.st-note.com/production/uploads/images/283128463/rectangle_large_type_2_b06c4782c25c72062e1e4fccd68b7244.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/nfceac847c4f8'},
     {title:'ESFP 男に溺愛される方法｜今を生きる表現者が夢中になる、心を掴む女性',excerpt:'「明るくて楽しい人だけど、真剣な話が全然できない」 「いつも周りに人が集まっていて、自分って彼にとって特別な存…',img:'https://assets.st-note.com/production/uploads/images/283099431/rectangle_large_type_2_f782247cb8dbd2963d97e0afa982c42a.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/nb30cac97bf89'}
   ]},
