@@ -11,6 +11,7 @@ const popularArticles = [
 /* MBTI恋愛ランキング一覧（8本） */
 const rankingSections = [
   {category:'好き避け・連絡・脈ありサイン',tag:'脈・連絡',items:[
+    {title:'LINEより会いたい MBTIランキング',excerpt:'「文字だけのやり取りでは、相手の本当の気持ちが伝わらない気がする」 「長々とメッセージを打つより、直接顔を見て話した方が早くて分かりやすい」 「画面越しの会話で…',img:'https://assets.st-note.com/production/uploads/images/289323623/rectangle_large_type_2_2ff2654e82564f9c01d674c3fcb2d287.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n221be669038d'},
     {title:'好き避けしやすいMBTIランキング｜好きな人ほど逃げてしまう16タイプ',excerpt:'「全然話しかけてくれない… 嫌われてる？」 「目が合った瞬間、サッとそらされた… 脈なしだよね？」 「他の人と…',img:'https://assets.st-note.com/production/uploads/images/282377567/rectangle_large_type_2_df02fe08687418e4dab186ebd3d68d56.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/nad3060876637'},
     {title:'脈なし確定？それとも考え中？既読無視しがちなMBTIランキング',excerpt:'「既読になって何日も経つのに、返事が来ない」「読んだなら一言くらい反応してくれてもいいのに…」「私のこと、どう…',img:'https://assets.st-note.com/production/uploads/images/283139964/rectangle_large_type_2_00ba0bfc30602703edecdd747e83b5af.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n9fa05d63f314'},
     {title:'嫌われたと思ったら違った――未読無視しがちなMBTIランキング',excerpt:'「送ったメッセージが何日も未読のまま…」 「既読になってもすぐ返事が来ない」 「いつも自分からばかり送っている…',img:'https://assets.st-note.com/production/uploads/images/283139632/rectangle_large_type_2_7e6a14f5fcaa0dc0bceb0385b821b8d3.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n983863e05735'},
