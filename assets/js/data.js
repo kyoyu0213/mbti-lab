@@ -11,6 +11,7 @@ const popularArticles = [
 /* MBTI恋愛ランキング一覧（8本） */
 const rankingSections = [
   {category:'好き避け・連絡・脈ありサイン',tag:'脈・連絡',items:[
+    {title:'恋愛で駆け引きが上手いMBTIランキング',excerpt:'「相手の気を引こうとして、わざと連絡を遅らせたり、素っ気なくしたりする」 「自分のことをもっと気にかけてほしくて、相手の反応を見ながら態度を変える」 「どうすれ…',img:'https://assets.st-note.com/production/uploads/images/291377095/rectangle_large_type_2_6e0159960d0b6083e3c51085b2862967.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n67d99338204f'},
     {title:'LINEの返信速度が遅いMBTIランキング',excerpt:'「他の人はすぐに返事をくれるのに、この人からはなかなか連絡が来ない」 「送ってから半日以上経ってようやく返信が来ることが当たり前になっている」 「決して嫌ってい…',img:'https://assets.st-note.com/production/uploads/images/290431272/rectangle_large_type_2_292c730ea2bde22c4adf921daf5ada5d.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n48ec6d437576'},
     {title:'好きになると急に饒舌になるMBTIランキング',excerpt:'「普段はそれほど話す方ではないのに、特定の人の前に立つと自分でも驚くほど言葉が次々と出てくる」 「何かを伝えたい、自分のことを知ってほしいという思いが強まり、気…',img:'https://assets.st-note.com/production/uploads/images/290128816/rectangle_large_type_2_73e0c51370bbbe2df09a4208941c405d.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n3555a66c5816'},
     {title:'LINEより会いたい MBTIランキング',excerpt:'「文字だけのやり取りでは、相手の本当の気持ちが伝わらない気がする」 「長々とメッセージを打つより、直接顔を見て話した方が早くて分かりやすい」 「画面越しの会話で…',img:'https://assets.st-note.com/production/uploads/images/289323623/rectangle_large_type_2_2ff2654e82564f9c01d674c3fcb2d287.png?fit=bounds&quality=85&width=480',url:'https://note.com/intj_analyst/n/n221be669038d'},
