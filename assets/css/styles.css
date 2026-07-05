@@ -1640,7 +1640,7 @@ img {
 /* ===== トップ フッター：他サイト診断バナー ===== */
 .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; flex-wrap: wrap; }
 .footer-main { flex: 1 1 300px; min-width: 260px; }
-.footer-promos { display: flex; gap: 12px; flex: 0 1 auto; }
+.footer-promos { display: flex; gap: 12px; flex: 0 1 auto; flex-wrap: wrap; justify-content: flex-end; }
 .promo-card {
   position: relative;
   display: block;
