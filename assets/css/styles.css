@@ -1636,3 +1636,37 @@ img {
 @media (min-width: 900px) {
   .col-cards { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* ===== トップ フッター：他サイト診断バナー ===== */
+.footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; flex-wrap: wrap; }
+.footer-main { flex: 1 1 300px; min-width: 260px; }
+.footer-promos { display: flex; gap: 12px; flex: 0 1 auto; }
+.promo-card {
+  position: relative;
+  display: block;
+  width: 208px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #1a1420;
+  box-shadow: 0 8px 22px rgba(239, 94, 151, 0.16);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+.promo-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(239, 94, 151, 0.26); }
+.promo-card img { width: 100%; height: auto; display: block; }
+.promo-cap {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 16px 12px 9px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.78));
+}
+@media (max-width: 720px) {
+  .footer-promos { width: 100%; }
+  .promo-card { flex: 1 1 0; width: auto; }
+}
+@media (max-width: 400px) {
+  .footer-promos { flex-direction: column; }
+  .promo-card { width: 100%; }
+}
