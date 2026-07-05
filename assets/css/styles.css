@@ -1670,3 +1670,18 @@ img {
   .footer-promos { flex-direction: column; }
   .promo-card { width: 100%; }
 }
+
+/* フッターバナー：薄いオーバーレイで馴染ませる（ホバーでくっきり） */
+.promo-card img { filter: saturate(0.82) brightness(0.92); transition: filter 0.2s ease; }
+.promo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 246, 250, 0.34), rgba(255, 233, 243, 0.30));
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.2s ease;
+}
+.promo-card .promo-cap { z-index: 2; }
+.promo-card:hover img { filter: none; }
+.promo-card:hover::after { opacity: 0; }
